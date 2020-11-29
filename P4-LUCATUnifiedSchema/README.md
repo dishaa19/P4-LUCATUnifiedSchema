@@ -6,4 +6,4 @@ The P4-LUCAT unified scehma has been defined as an ongoing research effort by me
 
 # Github Repositories
 - P4-LUCAT Unified Schema: [UnifiedSchema](https://github.com/SDM-TIB/P4-LUCATUnifiedSchema)
-- Mapping rules to create P4-LUCAT knowledge graph: [Mappings](https://github.com/SDM-TIB/P4-LUCAT)
+- Mapping rules to create P4-LUCAT knowledge graph: [Mappings](https://github.com/SDM-TIB/P4-LUCAT_KG)
