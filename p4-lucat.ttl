@@ -9,89 +9,89 @@
 ##########################################################################################
 ################################## Classes ###############################################
 ##########################################################################################
-p4-lucat:Assignment rdf:type owl:Class ;
-                                      rdfs:subClassOf p4-lucat:Concept ;
-                                      rdfs:comment "This class represents the assignment of a clinical trial"@en ;
-                                      rdfs:isDefinedBy "emetis_niazmand"@en ;
-                                      rdfs:label "Assignment"@en ;
-                                      owl:versionInfo "v1.0"@en .
+p4-lucat:Assignment 	rdf:type 	owl:Class;
+                                      	rdfs:subClassOf p4-lucat:Concept;
+                                      	rdfs:comment "This class represents the assignment of a clinical trial"@en;
+                                      	rdfs:isDefinedBy "emetis_niazmand"@en;
+                                      	rdfs:label "Assignment"@en;
+                                      	owl:versionInfo "v1.0"@en.
 
 
 
-p4-lucat:CTGender rdf:type owl:Class ;
-                                    rdfs:subClassOf p4-lucat:Concept ;
-                                    rdfs:comment "This class represents the gender included in a clinical trial"@en ;
-                                    rdfs:isDefinedBy "emetis_niazmand"@en ;
-                                    rdfs:label "CTGender"@en ;
-                                    owl:versionInfo "v1.0"@en .
+p4-lucat:CTGender 	rdf:type 	owl:Class;
+                                    	rdfs:subClassOf p4-lucat:Concept;
+                                    	rdfs:comment "This class represents the gender included in a clinical trial"@en;
+                                    	rdfs:isDefinedBy "emetis_niazmand"@en;
+                                    	rdfs:label "CTGender"@en;
+                                    	owl:versionInfo "v1.0"@en.
 
 
 
-p4-lucat:ClinicalTrial rdf:type owl:Class ;
-                                         rdfs:subClassOf p4-lucat:Concept ;
-                                         rdfs:comment "This class represents clinical trials conducted to study lung cancer drugs"@en ;
-                                         rdfs:isDefinedBy "emetis_niazmand"@en ;
-                                         rdfs:label "ClinicalTrial"@en ;
-                                         owl:versionInfo "v1.0"@en .
+p4-lucat:ClinicalTrial 	rdf:type 	owl:Class;
+                                        rdfs:subClassOf p4-lucat:Concept;
+                                        rdfs:comment "This class represents clinical trials conducted to study lung cancer drugs"@en;
+                                        rdfs:isDefinedBy "emetis_niazmand"@en;
+                                        rdfs:label "ClinicalTrial"@en;
+                                        owl:versionInfo "v1.0"@en.
 
 
-p4-lucat:Concept rdf:type owl:Class ;
-                                   rdfs:subClassOf owl:Thing ;
-                                   rdfs:comment "Constituents of thoughts or real world entities."@en ;
-                                   rdfs:isDefinedBy "emetis_niazmand"@en ;
-                                   rdfs:label "Concept"@en ;
-                                   owl:versionInfo "v1.0"@en .
+p4-lucat:Concept 	rdf:type 	owl:Class;
+                                   	rdfs:subClassOf owl:Thing;
+                                   	rdfs:comment "Constituents of thoughts or real world entities."@en;
+                                   	rdfs:isDefinedBy "emetis_niazmand"@en;
+                                   	rdfs:label "Concept"@en;
+                                   	owl:versionInfo "v1.0"@en.
 
 
-p4-lucat:Condition rdf:type owl:Class ;
-                                     rdfs:subClassOf p4-lucat:Disorder ;
-                                     rdfs:comment "This class represents conditions or diseases"@en ;
-                                     rdfs:isDefinedBy "emetis_niazmand"@en ;
-                                     rdfs:label "Condition"@en ;
-                                     owl:versionInfo "v1.0"@en .
+p4-lucat:Condition 	rdf:type 	owl:Class;
+                                     	rdfs:subClassOf p4-lucat:Disorder;
+                                     	rdfs:comment "This class represents conditions or diseases"@en;
+                                     	rdfs:isDefinedBy "emetis_niazmand"@en;
+                                     	rdfs:label "Condition"@en;
+                                     	owl:versionInfo "v1.0"@en.
 
 
-p4-lucat:Disorder rdf:type owl:Class ;
-                                    rdfs:subClassOf p4-lucat:Concept ;
-                                    rdfs:comment "This class represents disorders"@en ;
-                                    rdfs:isDefinedBy "emetis_niazmand"@en ;
-                                    rdfs:label "Disorder"@en ;
-                                    owl:versionInfo "v1.0"@en .
+p4-lucat:Disorder 	rdf:type 	owl:Class;
+                                    	rdfs:subClassOf p4-lucat:Concept;
+                                    	rdfs:comment "This class represents disorders"@en;
+                                    	rdfs:isDefinedBy "emetis_niazmand"@en;
+                                    	rdfs:label "Disorder"@en;
+                                    	owl:versionInfo "v1.0"@en.
 
 
-p4-lucat:Drug rdf:type owl:Class ;
-                                rdfs:subClassOf p4-lucat:Intervention ;
-                                rdfs:comment "This class represents drugs"@en ;
-                                rdfs:isDefinedBy "emetis_niazmand"@en ;
-                                rdfs:label "Drug"@en ;
-                                owl:versionInfo "v1.0"@en .
-
-
-
-p4-lucat:Intervention rdf:type owl:Class ;
-                                        rdfs:subClassOf p4-lucat:Concept ;
-                                        rdfs:comment "This class represents interventions of clinical trials (e.g., drugs, medical devices)"@en ;
-                                        rdfs:isDefinedBy "emetis_niazmand"@en ;
-                                        rdfs:label "Intervention"@en ;
-                                        owl:versionInfo "v1.0"@en .
+p4-lucat:Drug 		rdf:type 	owl:Class;
+                                	rdfs:subClassOf p4-lucat:Intervention;
+                                	rdfs:comment "This class represents drugs"@en;
+                                	rdfs:isDefinedBy "emetis_niazmand"@en;
+                                	rdfs:label "Drug"@en;
+                                	owl:versionInfo "v1.0"@en.
 
 
 
-p4-lucat:Keyword rdf:type owl:Class ;
-                                   rdfs:subClassOf p4-lucat:Concept ;
-                                   rdfs:comment "This class represents medical keywords"@en ;
-                                   rdfs:isDefinedBy "emetis_niazmand"@en ;
-                                   rdfs:label "Keyword"@en ;
-                                   owl:versionInfo "v1.0"@en .
+p4-lucat:Intervention 	rdf:type 	owl:Class;
+                                        rdfs:subClassOf p4-lucat:Concept;
+                                        rdfs:comment "This class represents interventions of clinical trials (e.g., drugs, medical devices)"@en;
+                                        rdfs:isDefinedBy "emetis_niazmand"@en;
+                                        rdfs:label "Intervention"@en;
+                                        owl:versionInfo "v1.0"@en.
 
 
 
-p4-lucat:Publication rdf:type owl:Class ;
-                                       rdfs:subClassOf p4-lucat:Concept ;
-                                       rdfs:comment "This class represents scientific publications"@en ;
-                                       rdfs:isDefinedBy "emetis_niazmand"@en ;
-                                       rdfs:label "Publication"@en ;
-                                       owl:versionInfo "v1.0"@en .
+p4-lucat:Keyword 	rdf:type 	owl:Class ;
+                                   	rdfs:subClassOf p4-lucat:Concept;
+                                  	rdfs:comment "This class represents medical keywords"@en;
+                                  	rdfs:isDefinedBy "emetis_niazmand"@en;
+                                   	rdfs:label "Keyword"@en;
+                                   	owl:versionInfo "v1.0"@en.
+
+
+
+p4-lucat:Publication 	rdf:type 	owl:Class;
+                                        rdfs:subClassOf p4-lucat:Concept;
+                                        rdfs:comment "This class represents scientific publications"@en;
+                                        rdfs:isDefinedBy "emetis_niazmand"@en;
+                                        rdfs:label "Publication"@en;
+                                        owl:versionInfo "v1.0"@en.
 
 
 p4-lucat:Annotation	rdf:type	owl:Class;
@@ -644,147 +644,147 @@ p4-lucat:PatientSimilarity   rdf:type owl:Class;
 ################################### Properties ###################################################
 ##################################################################################################
 
-p4-lucat:briefSummary  rdf:type owl:DatatypeProperty ;
-                                        rdfs:subPropertyOf owl:topDataProperty ;
-                                        rdfs:domain p4-lucat:ClinicalTrial ;
-                                        rdfs:range xsd:string ;
-                                        rdfs:comment "This property shows the brief summary of clinical trials."@en ;
-                                        rdfs:isDefinedBy "emetis_niazmand"@en ;
-                                        rdfs:label "briefSummary"@en ;
-                                        owl:versionInfo "v1.0"@en .
+p4-lucat:briefSummary  rdf:type owl:DatatypeProperty;
+                                        rdfs:subPropertyOf owl:topDataProperty;
+                                        rdfs:domain p4-lucat:ClinicalTrial;
+                                        rdfs:range xsd:string;
+                                        rdfs:comment "This property shows the brief summary of clinical trials."@en;
+                                        rdfs:isDefinedBy "emetis_niazmand"@en;
+                                        rdfs:label "briefSummary"@en;
+                                        owl:versionInfo "v1.0"@en.
 
 
-p4-lucat:clinicalTrialId  rdf:type owl:DatatypeProperty ;
-                                           rdfs:subPropertyOf owl:topDataProperty ;
-                                           rdf:type owl:FunctionalProperty ;
-                                           rdfs:domain p4-lucat:ClinicalTrial ;
-                                           rdfs:range xsd:anyURI ;
-                                           rdfs:comment "This property shows the ids of clinical trials."@en ;
-                                           rdfs:isDefinedBy "emetis_niazmand"@en ;
-                                           rdfs:label "clinicalTrialId"@en ;
-                                           owl:versionInfo "v1.0"@en .
-
-
-
-p4-lucat:clinicalTrialTitle  rdf:type owl:DatatypeProperty ;
-                                              rdfs:subPropertyOf owl:topDataProperty ;
-                                              rdfs:domain p4-lucat:ClinicalTrial ;
-                                              rdfs:range xsd:string ;
-                                              rdfs:comment "This property shows the titles of clinical trials."@en ;
-                                              rdfs:isDefinedBy "emetis_niazmand"@en ;
-                                              rdfs:label "clinicalTrialTitle"@en ;
-                                              owl:versionInfo "v1.0"@en .
-
-
-p4-lucat:conditionLabel  rdf:type owl:DatatypeProperty ;
-                                          rdfs:subPropertyOf owl:topDataProperty ;
-                                          rdfs:domain p4-lucat:Condition ;
-                                          rdfs:range xsd:string ;
-                                          rdfs:comment "This property shows the name of conditions."@en ;
-                                          rdfs:isDefinedBy "emetis_niazmand"@en ;
-                                          rdfs:label "conditionLabel"@en ;
-                                          owl:versionInfo "v1.0"@en .
+p4-lucat:clinicalTrialId  rdf:type owl:DatatypeProperty;
+                                           rdfs:subPropertyOf owl:topDataProperty;
+                                           rdf:type owl:FunctionalProperty;
+                                           rdfs:domain p4-lucat:ClinicalTrial;
+                                           rdfs:range xsd:anyURI;
+                                           rdfs:comment "This property shows the ids of clinical trials."@en;
+                                           rdfs:isDefinedBy "emetis_niazmand"@en;
+                                           rdfs:label "clinicalTrialId"@en;
+                                           owl:versionInfo "v1.0"@en.
 
 
 
-p4-lucat:designAllocation rdf:type owl:DatatypeProperty ;
-                                            rdfs:subPropertyOf owl:topDataProperty ;
-                                            rdfs:domain p4-lucat:ClinicalTrial ;
-                                            rdfs:range xsd:anyURI ;
-                                            rdfs:comment "This property shows the allocation of design of clinical trials (e.g., Randomized or Non-Randomized)."@en ;
-                                            rdfs:isDefinedBy "emetis_niazmand"@en ;
-                                            rdfs:label "designAllocation"@en ;
-                                            owl:versionInfo "v1.0"@en .
+p4-lucat:clinicalTrialTitle  rdf:type owl:DatatypeProperty;
+                                              rdfs:subPropertyOf owl:topDataProperty;
+                                              rdfs:domain p4-lucat:ClinicalTrial;
+                                              rdfs:range xsd:string;
+                                              rdfs:comment "This property shows the titles of clinical trials."@en;
+                                              rdfs:isDefinedBy "emetis_niazmand"@en;
+                                              rdfs:label "clinicalTrialTitle"@en;
+                                              owl:versionInfo "v1.0"@en.
+
+
+p4-lucat:conditionLabel  rdf:type owl:DatatypeProperty;
+                                          rdfs:subPropertyOf owl:topDataProperty;
+                                          rdfs:domain p4-lucat:Condition;
+                                          rdfs:range xsd:string;
+                                          rdfs:comment "This property shows the name of conditions."@en;
+                                          rdfs:isDefinedBy "emetis_niazmand"@en;
+                                          rdfs:label "conditionLabel"@en;
+                                          owl:versionInfo "v1.0"@en.
 
 
 
-p4-lucat:designPrimaryPurpose rdf:type owl:DatatypeProperty ;
-                                                rdfs:subPropertyOf owl:topDataProperty ;
-                                                rdfs:domain p4-lucat:ClinicalTrial ;
-                                                rdfs:range xsd:anyURI ;
-                                                rdfs:comment "This property shows the primary purpose (e.g., Treatment or Diagnostic)"@en ;
-                                                rdfs:isDefinedBy "emetis_niazmand"@en ;
-                                                rdfs:label "designPrimaryPurpose"@en ;
-                                                owl:versionInfo "v1.0"@en .
+p4-lucat:designAllocation rdf:type owl:DatatypeProperty;
+                                            rdfs:subPropertyOf owl:topDataProperty;
+                                            rdfs:domain p4-lucat:ClinicalTrial;
+                                            rdfs:range xsd:anyURI;
+                                            rdfs:comment "This property shows the allocation of design of clinical trials (e.g., Randomized or Non-Randomized)."@en;
+                                            rdfs:isDefinedBy "emetis_niazmand"@en;
+                                            rdfs:label "designAllocation"@en;
+                                            owl:versionInfo "v1.0"@en.
 
 
 
-p4-lucat:detailedDescription rdf:type owl:DatatypeProperty ;
-                                               rdfs:subPropertyOf owl:topDataProperty ;
-                                               rdfs:domain p4-lucat:ClinicalTrial ;
-                                               rdfs:range xsd:string ;
-                                               rdfs:comment "This property shows the detailed description of clinical trials."@en ;
-                                               rdfs:isDefinedBy "emetis_niazmand"@en ;
-                                               rdfs:label "detailedDescription"@en ;
-                                               owl:versionInfo "v1.0"@en .
+p4-lucat:designPrimaryPurpose rdf:type owl:DatatypeProperty;
+                                                rdfs:subPropertyOf owl:topDataProperty;
+                                                rdfs:domain p4-lucat:ClinicalTrial;
+                                                rdfs:range xsd:anyURI;
+                                                rdfs:comment "This property shows the primary purpose (e.g., Treatment or Diagnostic)"@en;
+                                                rdfs:isDefinedBy "emetis_niazmand"@en;
+                                                rdfs:label "designPrimaryPurpose"@en;
+                                                owl:versionInfo "v1.0"@en.
 
 
 
-p4-lucat:interventionLabel rdf:type owl:DatatypeProperty ;
-                                             rdfs:subPropertyOf owl:topDataProperty ;
-                                             rdfs:domain p4-lucat:Intervention ;
-                                             rdfs:range xsd:string ;
-                                             rdfs:comment "This property shows the name of interventions."@en ;
-                                             rdfs:isDefinedBy "emetis_niazmand"@en ;
-                                             rdfs:label "interventionLabel"@en ;
-                                             owl:versionInfo "v1.0"@en .
+p4-lucat:detailedDescription rdf:type owl:DatatypeProperty;
+                                               rdfs:subPropertyOf owl:topDataProperty;
+                                               rdfs:domain p4-lucat:ClinicalTrial;
+                                               rdfs:range xsd:string;
+                                               rdfs:comment "This property shows the detailed description of clinical trials."@en;
+                                               rdfs:isDefinedBy "emetis_niazmand"@en;
+                                               rdfs:label "detailedDescription"@en;
+                                               owl:versionInfo "v1.0"@en.
 
 
 
-p4-lucat:keywordLabel rdf:type owl:DatatypeProperty ;
-                                        rdfs:subPropertyOf owl:topDataProperty ;
-                                        rdfs:domain p4-lucat:Keyword ;
-                                        rdfs:range xsd:string ;
-                                        rdfs:comment "This property shows the name of medical keywords."@en ;
-                                        rdfs:isDefinedBy "emetis_niazmand"@en ;
-                                        rdfs:label "keywordLabel"@en ;
-                                        owl:versionInfo "v1.0"@en .
+p4-lucat:interventionLabel rdf:type owl:DatatypeProperty;
+                                             rdfs:subPropertyOf owl:topDataProperty;
+                                             rdfs:domain p4-lucat:Intervention;
+                                             rdfs:range xsd:string;
+                                             rdfs:comment "This property shows the name of interventions."@en;
+                                             rdfs:isDefinedBy "emetis_niazmand"@en;
+                                             rdfs:label "interventionLabel"@en;
+                                             owl:versionInfo "v1.0"@en.
 
 
 
-p4-lucat:maxAge rdf:type owl:DatatypeProperty ;
-                                  rdfs:subPropertyOf owl:topDataProperty ;
-                                  rdfs:domain p4-lucat:ClinicalTrial ;
-                                  rdfs:range xsd:string ;
-                                  rdfs:comment "This property shows the maximum age of patients or volunteers."@en ;
-                                  rdfs:isDefinedBy "emetis_niazmand"@en ;
-                                  rdfs:label "maxAge"@en ;
-                                  owl:versionInfo "v1.0"@en .
+p4-lucat:keywordLabel rdf:type owl:DatatypeProperty;
+                                        rdfs:subPropertyOf owl:topDataProperty;
+                                        rdfs:domain p4-lucat:Keyword;
+                                        rdfs:range xsd:string;
+                                        rdfs:comment "This property shows the name of medical keywords."@en;
+                                        rdfs:isDefinedBy "emetis_niazmand"@en;
+                                        rdfs:label "keywordLabel"@en;
+                                        owl:versionInfo "v1.0"@en.
 
 
 
-p4-lucat:minAge rdf:type owl:DatatypeProperty ;
-                                  rdfs:subPropertyOf owl:topDataProperty ;
-                                  rdf:type owl:FunctionalProperty ;
-                                  rdfs:domain p4-lucat:ClinicalTrial ;
-                                  rdfs:range xsd:string ;
-                                  rdfs:comment "This property shows the minimum age of patients or volunteers."@en ;
-                                  rdfs:isDefinedBy "emetis_niazmand"@en ;
-                                  rdfs:label "minAge"@en ;
-                                  owl:versionInfo "v1.0"@en .
+p4-lucat:maxAge rdf:type owl:DatatypeProperty;
+                                  rdfs:subPropertyOf owl:topDataProperty;
+                                  rdfs:domain p4-lucat:ClinicalTrial;
+                                  rdfs:range xsd:string;
+                                  rdfs:comment "This property shows the maximum age of patients or volunteers."@en;
+                                  rdfs:isDefinedBy "emetis_niazmand"@en;
+                                  rdfs:label "maxAge"@en;
+                                  owl:versionInfo "v1.0"@en.
 
 
 
-p4-lucat:primaryOutTimeFrame rdf:type owl:DatatypeProperty ;
-                                               rdfs:subPropertyOf owl:topDataProperty ;
-                                               rdfs:domain p4-lucat:ClinicalTrial ;
-                                               rdfs:range xsd:string ;
-                                               rdfs:comment "This property shows the primary time frame (e.g., 18 months or 2 years)."@en ;
-                                               rdfs:isDefinedBy "emetis_niazmand"@en ;
-                                               rdfs:label "primaryOutTimeFrame"@en ;
-                                               owl:versionInfo "v1.0"@en .
+p4-lucat:minAge rdf:type owl:DatatypeProperty;
+                                  rdfs:subPropertyOf owl:topDataProperty;
+                                  rdf:type owl:FunctionalProperty;
+                                  rdfs:domain p4-lucat:ClinicalTrial;
+                                  rdfs:range xsd:string;
+                                  rdfs:comment "This property shows the minimum age of patients or volunteers."@en;
+                                  rdfs:isDefinedBy "emetis_niazmand"@en;
+                                  rdfs:label "minAge"@en;
+                                  owl:versionInfo "v1.0"@en.
 
 
 
-p4-lucat:statusCT rdf:type owl:DatatypeProperty ;
-                                    rdfs:subPropertyOf owl:topDataProperty ;
-                                    rdf:type owl:FunctionalProperty ;
-                                    rdfs:domain p4-lucat:ClinicalTrial ;
-                                    rdfs:range xsd:anyURI ;
-                                    rdfs:comment "This property shows the overall status of clinical trials which are completed."@en ;
-                                    rdfs:isDefinedBy "emetis_niazmand"@en ;
-                                    rdfs:label "statusCT"@en ;
-                                    owl:versionInfo "v1.0"@en .
+p4-lucat:primaryOutTimeFrame rdf:type owl:DatatypeProperty;
+                                               rdfs:subPropertyOf owl:topDataProperty;
+                                               rdfs:domain p4-lucat:ClinicalTrial;
+                                               rdfs:range xsd:string;
+                                               rdfs:comment "This property shows the primary time frame (e.g., 18 months or 2 years)."@en;
+                                               rdfs:isDefinedBy "emetis_niazmand"@en;
+                                               rdfs:label "primaryOutTimeFrame"@en;
+                                               owl:versionInfo "v1.0"@en.
+
+
+
+p4-lucat:statusCT rdf:type owl:DatatypeProperty;
+                                    rdfs:subPropertyOf owl:topDataProperty;
+                                    rdf:type owl:FunctionalProperty;
+                                    rdfs:domain p4-lucat:ClinicalTrial;
+                                    rdfs:range xsd:anyURI;
+                                    rdfs:comment "This property shows the overall status of clinical trials which are completed."@en;
+                                    rdfs:isDefinedBy "emetis_niazmand"@en;
+                                    rdfs:label "statusCT"@en;
+                                    owl:versionInfo "v1.0"@en.
 									
 									
 p4-lucat:annID	rdf:type	owl:DatatypeProperty;
@@ -835,108 +835,108 @@ p4-lucat:semanticTypeGroup	rdf:type	owl:DatatypeProperty;
 				dcterms:modified "2020-10-05"^^xsd:date;
 				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.								
 
-p4-lucat:CTHasKeyword  rdf:type owl:ObjectProperty ;
-                                        rdfs:subPropertyOf owl:topObjectProperty ;
-                                        rdfs:domain p4-lucat:ClinicalTrial ;
-                                        rdfs:range p4-lucat:Keyword ;
-                                        rdfs:comment "This property shows association of clinical trials to medical keywords."@en ;
-                                        rdfs:isDefinedBy "emetis_niazmand"@en ;
-                                        rdfs:label "CTHasKeyword"@en ;
-                                        owl:versionInfo "v1.0"@en .
+p4-lucat:CTHasKeyword  rdf:type owl:ObjectProperty;
+                                        rdfs:subPropertyOf owl:topObjectProperty;
+                                        rdfs:domain p4-lucat:ClinicalTrial;
+                                        rdfs:range p4-lucat:Keyword;
+                                        rdfs:comment "This property shows association of clinical trials to medical keywords."@en;
+                                        rdfs:isDefinedBy "emetis_niazmand"@en;
+                                        rdfs:label "CTHasKeyword"@en;
+                                        owl:versionInfo "v1.0"@en.
 
 
 
-p4-lucat:CTInPublication  rdf:type owl:ObjectProperty ;
-                                           rdfs:subPropertyOf owl:topObjectProperty ;
-                                           rdfs:domain p4-lucat:ClinicalTrial ;
-                                           rdfs:range p4-lucat:Publication ;
-                                           rdfs:comment "This property shows association of clinical trials to scientific publication."@en ;
-                                           rdfs:isDefinedBy "emetis_niazmand"@en ;
-                                           rdfs:label "CTInPublication"@en ;
-                                           owl:versionInfo "v1.0"@en .
+p4-lucat:CTInPublication  rdf:type owl:ObjectProperty;
+                                           rdfs:subPropertyOf owl:topObjectProperty;
+                                           rdfs:domain p4-lucat:ClinicalTrial;
+                                           rdfs:range p4-lucat:Publication;
+                                           rdfs:comment "This property shows association of clinical trials to scientific publication."@en;
+                                           rdfs:isDefinedBy "emetis_niazmand"@en;
+                                           rdfs:label "CTInPublication"@en;
+                                           owl:versionInfo "v1.0"@en.
 
 
 
-p4-lucat:CTOnCondition  rdf:type owl:ObjectProperty ;
-                                         rdfs:subPropertyOf owl:topObjectProperty ;
-                                         rdfs:domain p4-lucat:ClinicalTrial ;
-                                         rdfs:range p4-lucat:Condition ;
-                                         rdfs:comment "This property shows association of clinical trials to condition."@en ;
-                                         rdfs:isDefinedBy "emetis_niazmand"@en ;
-                                         rdfs:label "CTOnCondition"@en ;
-                                         owl:versionInfo "v1.0"@en .
+p4-lucat:CTOnCondition  rdf:type owl:ObjectProperty;
+                                         rdfs:subPropertyOf owl:topObjectProperty;
+                                         rdfs:domain p4-lucat:ClinicalTrial;
+                                         rdfs:range p4-lucat:Condition;
+                                         rdfs:comment "This property shows association of clinical trials to condition."@en;
+                                         rdfs:isDefinedBy "emetis_niazmand"@en;
+                                         rdfs:label "CTOnCondition"@en;
+                                         owl:versionInfo "v1.0"@en.
 
 
 
-p4-lucat:CTOnIntervention  rdf:type owl:ObjectProperty ;
-                                            rdfs:subPropertyOf owl:topObjectProperty ;
-                                            rdfs:domain p4-lucat:ClinicalTrial ;
-                                            rdfs:range p4-lucat:Intervention ;
-                                            rdfs:comment "This property shows association of clinical trials to intervention."@en ;
-                                            rdfs:isDefinedBy "emetis_niazmand"@en ;
-                                            rdfs:label "CTOnIntervention"@en ;
-                                            owl:versionInfo "v1.0"@en .
+p4-lucat:CTOnIntervention  rdf:type owl:ObjectProperty;
+                                            rdfs:subPropertyOf owl:topObjectProperty;
+                                            rdfs:domain p4-lucat:ClinicalTrial;
+                                            rdfs:range p4-lucat:Intervention;
+                                            rdfs:comment "This property shows association of clinical trials to intervention."@en;
+                                            rdfs:isDefinedBy "emetis_niazmand"@en;
+                                            rdfs:label "CTOnIntervention"@en;
+                                            owl:versionInfo "v1.0"@en.
 
 
-p4-lucat:ConditionInCT  rdf:type owl:ObjectProperty ;
-                                         rdfs:subPropertyOf owl:topObjectProperty ;
-                                         rdfs:domain p4-lucat:Condition ;
-                                         rdfs:range p4-lucat:ClinicalTrial ;
-                                         rdfs:comment "This property shows association of condition to clinical trials."@en ;
-                                         rdfs:isDefinedBy "emetis_niazmand"@en ;
-                                         rdfs:label "ConditionInCT"@en ;
-                                         owl:versionInfo "v1.0"@en .
+p4-lucat:ConditionInCT  rdf:type owl:ObjectProperty;
+                                         rdfs:subPropertyOf owl:topObjectProperty;
+                                         rdfs:domain p4-lucat:Condition;
+                                         rdfs:range p4-lucat:ClinicalTrial;
+                                         rdfs:comment "This property shows association of condition to clinical trials."@en;
+                                         rdfs:isDefinedBy "emetis_niazmand"@en;
+                                         rdfs:label "ConditionInCT"@en;
+                                         owl:versionInfo "v1.0"@en.
 
 
 
-p4-lucat:DesignInterventionModel  rdf:type owl:ObjectProperty ;
-                                                   rdfs:subPropertyOf owl:topObjectProperty ;
-                                                   rdfs:domain p4-lucat:ClinicalTrial ;
-                                                   rdfs:range p4-lucat:Assignment ;
-                                                   rdfs:comment "This property shows association of clinical trials to assignment (e.g., Single or Parallel Assignment)."@en ;
-                                                   rdfs:isDefinedBy "emetis_niazmand"@en ;
-                                                   rdfs:label "DesignInterventionModel"@en ;
-                                                   owl:versionInfo "v1.0"@en .
+p4-lucat:DesignInterventionModel  rdf:type owl:ObjectProperty;
+                                                   rdfs:subPropertyOf owl:topObjectProperty;
+                                                   rdfs:domain p4-lucat:ClinicalTrial;
+                                                   rdfs:range p4-lucat:Assignment;
+                                                   rdfs:comment "This property shows association of clinical trials to assignment (e.g., Single or Parallel Assignment)."@en;
+                                                   rdfs:isDefinedBy "emetis_niazmand"@en;
+                                                   rdfs:label "DesignInterventionModel"@en;
+                                                   owl:versionInfo "v1.0"@en.
 
 
-p4-lucat:GenderInCT  rdf:type owl:ObjectProperty ;
-                                      rdfs:subPropertyOf owl:topObjectProperty ;
-                                      rdfs:domain p4-lucat:ClinicalTrial ;
-                                      rdfs:range p4-lucat:CTGender ;
-                                      rdfs:comment "This property shows association of clinical trials to gender."@en ;
-                                      rdfs:isDefinedBy "emetis_niazmand"@en ;
-                                      rdfs:label "GenderInCT"@en ;
-                                      owl:versionInfo "v1.0"@en .
+p4-lucat:GenderInCT  rdf:type owl:ObjectProperty;
+                                      rdfs:subPropertyOf owl:topObjectProperty;
+                                      rdfs:domain p4-lucat:ClinicalTrial;
+                                      rdfs:range p4-lucat:CTGender;
+                                      rdfs:comment "This property shows association of clinical trials to gender."@en;
+                                      rdfs:isDefinedBy "emetis_niazmand"@en;
+                                      rdfs:label "GenderInCT"@en;
+                                      owl:versionInfo "v1.0"@en.
 
 
-p4-lucat:InterventionInCT  rdf:type owl:ObjectProperty ;
-                                            rdfs:subPropertyOf owl:topObjectProperty ;
-                                            rdfs:domain p4-lucat:Intervention ;
-                                            rdfs:range p4-lucat:ClinicalTrial ;
-                                            rdfs:comment "This property shows association of intervention to clinical trials."@en ;
-                                            rdfs:isDefinedBy "emetis_niazmand"@en ;
-                                            rdfs:label "InterventionInCT"@en ;
-                                            owl:versionInfo "v1.0"@en .
+p4-lucat:InterventionInCT  rdf:type owl:ObjectProperty;
+                                            rdfs:subPropertyOf owl:topObjectProperty;
+                                            rdfs:domain p4-lucat:Intervention;
+                                            rdfs:range p4-lucat:ClinicalTrial;
+                                            rdfs:comment "This property shows association of intervention to clinical trials."@en;
+                                            rdfs:isDefinedBy "emetis_niazmand"@en;
+                                            rdfs:label "InterventionInCT"@en;
+                                            owl:versionInfo "v1.0"@en.
 
 
-p4-lucat:KeywordMentionedInCT  rdf:type owl:ObjectProperty ;
-                                                rdfs:subPropertyOf owl:topObjectProperty ;
-                                                rdfs:domain p4-lucat:Keyword ;
-                                                rdfs:range p4-lucat:ClinicalTrial ;
-                                                rdfs:comment "This property shows association of medical keywords to clinical trials."@en ;
-                                                rdfs:isDefinedBy "emetis_niazmand"@en ;
-                                                rdfs:label "KeywordMentionedInCT"@en ;
-                                                owl:versionInfo "v1.0"@en .
+p4-lucat:KeywordMentionedInCT  rdf:type owl:ObjectProperty;
+                                                rdfs:subPropertyOf owl:topObjectProperty;
+                                                rdfs:domain p4-lucat:Keyword;
+                                                rdfs:range p4-lucat:ClinicalTrial;
+                                                rdfs:comment "This property shows association of medical keywords to clinical trials."@en;
+                                                rdfs:isDefinedBy "emetis_niazmand"@en;
+                                                rdfs:label "KeywordMentionedInCT"@en;
+                                                owl:versionInfo "v1.0"@en.
 
 
-p4-lucat:PubOfCT  rdf:type owl:ObjectProperty ;
-                                   rdfs:subPropertyOf owl:topObjectProperty ;
-                                   rdfs:domain p4-lucat:Publication ;
-                                   rdfs:range p4-lucat:ClinicalTrial ;
-                                   rdfs:comment "This property shows association of scientific publication to clinical trials."@en ;
-                                   rdfs:isDefinedBy "emetis_niazmand"@en ;
-                                   rdfs:label "PubOfCT"@en ;
-                                   owl:versionInfo "v1.0"@en .
+p4-lucat:PubOfCT  rdf:type owl:ObjectProperty;
+                                   rdfs:subPropertyOf owl:topObjectProperty;
+                                   rdfs:domain p4-lucat:Publication;
+                                   rdfs:range p4-lucat:ClinicalTrial;
+                                   rdfs:comment "This property shows association of scientific publication to clinical trials."@en;
+                                   rdfs:isDefinedBy "emetis_niazmand"@en;
+                                   rdfs:label "PubOfCT"@en;
+                                   owl:versionInfo "v1.0"@en.
 
 
 p4-lucat:provenance	rdf:type	owl:ObjectProperty;
