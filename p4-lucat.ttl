@@ -213,12 +213,6 @@ p4-lucat:LungCancerDrug	rdf:type owl:Class;
 			dcterms:modified "2020-07-24"^^xsd:date;
 			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-p4-lucat:AlzheimerDrug	rdf:type owl:Class;
-			rdfs:label	"AlzheimerDrug";
-			rdfs:subClassOf	p4-lucat:Drug;
-			rdfs:comment "Drugs that are prescribed for Alzheimer Disease.";
-			dcterms:modified "2020-07-24"^^xsd:date;
-			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 p4-lucat:Phenotype rdf:type	owl:Class;
 					rdfs:label	"Phenotype";
