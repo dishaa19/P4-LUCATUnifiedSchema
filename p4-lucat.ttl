@@ -76,6 +76,13 @@ p4-lucat:Intervention 	rdf:type 	owl:Class;
                                         owl:versionInfo "v1.0"@en.
 
 
+p4-lucat:Keyword-Annotation 	rdf:type 	owl:Class ;
+                                   	rdfs:subClassOf p4-lucat:Concept;
+                                  	rdfs:comment "This class represents medical Keyword-Annotation"@en;
+                                  	rdfs:isDefinedBy "emetis_niazmand"@en;
+                                   	rdfs:label "hasKeyword"@en;
+                                   	owl:versionInfo "v1.0"@en.
+
 
 p4-lucat:Keyword 	rdf:type 	owl:Class ;
                                    	rdfs:subClassOf p4-lucat:Concept;
@@ -83,7 +90,6 @@ p4-lucat:Keyword 	rdf:type 	owl:Class ;
                                   	rdfs:isDefinedBy "emetis_niazmand"@en;
                                    	rdfs:label "Keyword"@en;
                                    	owl:versionInfo "v1.0"@en.
-
 
 
 p4-lucat:Publication 	rdf:type 	owl:Class;
