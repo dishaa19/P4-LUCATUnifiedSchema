@@ -23,11 +23,11 @@ p4-lucat:Assignment-Annotation 	rdf:type 	owl:Class ;
                                    	rdfs:label "hasAssignment"@en;
                                    	owl:versionInfo "v1.0"@en.
 
-p4-lucat:CTGender 	rdf:type 	owl:Class;
+p4-lucat:Sex 	rdf:type 	owl:Class;
                                     	rdfs:subClassOf p4-lucat:Concept;
                                     	rdfs:comment "This class represents the gender included in a clinical trial"@en;
                                     	rdfs:isDefinedBy "emetis_niazmand"@en;
-                                    	rdfs:label "CTGender"@en;
+                                    	rdfs:label "Sex"@en;
                                     	owl:versionInfo "v1.0"@en.
 
 
@@ -419,12 +419,6 @@ p4-lucat:FamiliarAntecedent	rdf:type	owl:Class;
 							rdfs:comment "Familiar antecedents of the patient.";
 							dcterms:modified "2018-09-27"^^xsd:date;
 							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-p4-lucat:Gender	rdf:type	owl:Class;
-						rdfs:label	"Gender";
-						rdfs:comment "The gender of the patients.";
-						dcterms:modified "2018-09-27"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 p4-lucat:DrugGroup	rdf:type	owl:Class;
 						rdfs:subClassOf p4-lucat:Concept;
@@ -918,7 +912,7 @@ p4-lucat:DesignInterventionModel  rdf:type owl:ObjectProperty;
 p4-lucat:GenderInCT  rdf:type owl:ObjectProperty;
                                       rdfs:subPropertyOf owl:topObjectProperty;
                                       rdfs:domain p4-lucat:ClinicalTrial;
-                                      rdfs:range p4-lucat:CTGender;
+                                      rdfs:range p4-lucat:Sex;
                                       rdfs:comment "This property shows association of clinical trials to gender."@en;
                                       rdfs:isDefinedBy "emetis_niazmand"@en;
                                       rdfs:label "GenderInCT"@en;
