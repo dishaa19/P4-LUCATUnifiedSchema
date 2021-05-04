@@ -654,6 +654,660 @@ p4-lucat:PatientSimilarity   rdf:type owl:Class;
 ################################### Properties ###################################################
 ##################################################################################################
 
+
+################################### ObjectProperties ###################################################
+p4-lucat:CTHasKeyword  rdf:type owl:ObjectProperty;
+                                        rdfs:subPropertyOf owl:topObjectProperty;
+                                        rdfs:domain p4-lucat:ClinicalTrial;
+                                        rdfs:range p4-lucat:Keyword;
+                                        rdfs:comment "This property shows association of clinical trials to medical keywords."@en;
+                                        rdfs:isDefinedBy "emetis_niazmand"@en;
+                                        rdfs:label "CTHasKeyword"@en;
+                                        owl:versionInfo "v1.0"@en.
+
+
+
+p4-lucat:CTInPublication  rdf:type owl:ObjectProperty;
+                                           rdfs:subPropertyOf owl:topObjectProperty;
+                                           rdfs:domain p4-lucat:ClinicalTrial;
+                                           rdfs:range p4-lucat:Publication;
+                                           rdfs:comment "This property shows association of clinical trials to scientific publication."@en;
+                                           rdfs:isDefinedBy "emetis_niazmand"@en;
+                                           rdfs:label "CTInPublication"@en;
+                                           owl:versionInfo "v1.0"@en.
+
+
+
+p4-lucat:CTOnCondition  rdf:type owl:ObjectProperty;
+                                         rdfs:subPropertyOf owl:topObjectProperty;
+                                         rdfs:domain p4-lucat:ClinicalTrial;
+                                         rdfs:range p4-lucat:Condition;
+                                         rdfs:comment "This property shows association of clinical trials to condition."@en;
+                                         rdfs:isDefinedBy "emetis_niazmand"@en;
+                                         rdfs:label "CTOnCondition"@en;
+                                         owl:versionInfo "v1.0"@en.
+
+
+
+p4-lucat:CTOnIntervention  rdf:type owl:ObjectProperty;
+                                            rdfs:subPropertyOf owl:topObjectProperty;
+                                            rdfs:domain p4-lucat:ClinicalTrial;
+                                            rdfs:range p4-lucat:Intervention;
+                                            rdfs:comment "This property shows association of clinical trials to intervention."@en;
+                                            rdfs:isDefinedBy "emetis_niazmand"@en;
+                                            rdfs:label "CTOnIntervention"@en;
+                                            owl:versionInfo "v1.0"@en.
+
+
+p4-lucat:ConditionInCT  rdf:type owl:ObjectProperty;
+                                         rdfs:subPropertyOf owl:topObjectProperty;
+                                         rdfs:domain p4-lucat:Condition;
+                                         rdfs:range p4-lucat:ClinicalTrial;
+                                         rdfs:comment "This property shows association of condition to clinical trials."@en;
+                                         rdfs:isDefinedBy "emetis_niazmand"@en;
+                                         rdfs:label "ConditionInCT"@en;
+                                         owl:versionInfo "v1.0"@en.
+
+
+
+p4-lucat:DesignInterventionModel  rdf:type owl:ObjectProperty;
+                                                   rdfs:subPropertyOf owl:topObjectProperty;
+                                                   rdfs:domain p4-lucat:ClinicalTrial;
+                                                   rdfs:range p4-lucat:Assignment;
+                                                   rdfs:comment "This property shows association of clinical trials to assignment (e.g., Single or Parallel Assignment)."@en;
+                                                   rdfs:isDefinedBy "emetis_niazmand"@en;
+                                                   rdfs:label "DesignInterventionModel"@en;
+                                                   owl:versionInfo "v1.0"@en.
+
+
+p4-lucat:GenderInCT  rdf:type owl:ObjectProperty;
+                                      rdfs:subPropertyOf owl:topObjectProperty;
+                                      rdfs:domain p4-lucat:ClinicalTrial;
+                                      rdfs:range p4-lucat:Sex;
+                                      rdfs:comment "This property shows association of clinical trials to gender."@en;
+                                      rdfs:isDefinedBy "emetis_niazmand"@en;
+                                      rdfs:label "GenderInCT"@en;
+                                      owl:versionInfo "v1.0"@en.
+
+
+p4-lucat:InterventionInCT  rdf:type owl:ObjectProperty;
+                                            rdfs:subPropertyOf owl:topObjectProperty;
+                                            rdfs:domain p4-lucat:Intervention;
+                                            rdfs:range p4-lucat:ClinicalTrial;
+                                            rdfs:comment "This property shows association of intervention to clinical trials."@en;
+                                            rdfs:isDefinedBy "emetis_niazmand"@en;
+                                            rdfs:label "InterventionInCT"@en;
+                                            owl:versionInfo "v1.0"@en.
+
+
+p4-lucat:KeywordMentionedInCT  rdf:type owl:ObjectProperty;
+                                                rdfs:subPropertyOf owl:topObjectProperty;
+                                                rdfs:domain p4-lucat:Keyword;
+                                                rdfs:range p4-lucat:ClinicalTrial;
+                                                rdfs:comment "This property shows association of medical keywords to clinical trials."@en;
+                                                rdfs:isDefinedBy "emetis_niazmand"@en;
+                                                rdfs:label "KeywordMentionedInCT"@en;
+                                                owl:versionInfo "v1.0"@en.
+
+
+p4-lucat:PubOfCT  rdf:type owl:ObjectProperty;
+                                   rdfs:subPropertyOf owl:topObjectProperty;
+                                   rdfs:domain p4-lucat:Publication;
+                                   rdfs:range p4-lucat:ClinicalTrial;
+                                   rdfs:comment "This property shows association of scientific publication to clinical trials."@en;
+                                   rdfs:isDefinedBy "emetis_niazmand"@en;
+                                   rdfs:label "PubOfCT"@en;
+                                   owl:versionInfo "v1.0"@en.
+
+#### WP4 requirements:
+
+p4-lucat:provenance	rdf:type	owl:ObjectProperty;
+					rdfs:label	"provenance";
+					rdfs:domain p4-lucat:Concept;
+					rdfs:range	p4-lucat:SourceName;
+					rdfs:comment	"The name of the source from which the concept is extracted or derived";
+					dcterms:modified "2017-11-23"^^xsd:date;
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/>.
+
+p4-lucat:hasAnnotation	rdf:type owl:ObjectProperty;
+								rdfs:label	"hasAnnotation";
+								rdfs:domain p4-lucat:Relation;
+				  				rdfs:range p4-lucat:Annotation;
+								rdfs:comment	"Connection between the annotation and the relation between annotation and publication";
+								dcterms:modified "2019-01-30"^^xsd:date;
+								dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+p4-lucat:hasCUIAnnotation	rdf:type owl:ObjectProperty;
+								rdfs:label	"hasCUIAnnotation";
+								rdfs:domain p4-lucat:Concept;
+				  				rdfs:range p4-lucat:Annotation;
+								rdfs:comment	"CUI annotation of the concept.";
+								dcterms:modified "2019-01-29"^^xsd:date;
+								dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+
+p4-lucat:hasHPOAnnotation	rdf:type owl:ObjectProperty;
+								rdfs:label	"hasHPOAnnotation";
+								rdfs:domain p4-lucat:Phenotype;
+				  				rdfs:range p4-lucat:Annotation;
+								rdfs:comment	"HPO annotation of the phenotype.";
+								dcterms:modified "2019-01-30"^^xsd:date;
+								dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+p4-lucat:author	rdf:type	owl:ObjectProperty;
+				rdfs:label	"authors";
+				rdfs:domain	p4-lucat:Publication;
+				rdfs:range	p4-lucat:Author;
+				rdfs:comment	"Authors of publication";
+				dcterms:modified "2019-05-24"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+p4-lucat:annotates	rdf:type	owl:ObjectProperty;
+							rdfs:label	"annotates";
+							rdfs:domain	p4-lucat:Relation;
+							rdfs:range	p4-lucat:Publication;
+							rdfs:comment	"Connection between mentionedIn or HasTopic relation with CUI.";
+							dcterms:modified "2019-05-24"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+p4-lucat:publication_isRelatedTo_Disease	rdf:type	owl:ObjectProperty;
+							rdfs:label	"publication_isRelatedTo_Disease";
+							rdfs:domain	p4-lucat:Publication;
+							rdfs:range	p4-lucat:Disorder;
+							rdfs:comment	"";
+							dcterms:modified "2019-05-24"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+p4-lucat:relation_isRelatedTo_annotation	rdf:type        owl:ObjectProperty;	
+				                rdfs:label	"relation_isRelatedTo_annotation";
+						rdfs:domain	p4-lucat:Relation;
+						rdfs:range	p4-lucat:Annotation;
+						rdfs:comment	".";
+						dcterms:modified "2018-11-27"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+
+
+p4-lucat:relation_isRelatedTo_publication	rdf:type        owl:ObjectProperty;	
+				                rdfs:label	"relation_isRelatedTo_publication";
+						rdfs:domain	p4-lucat:Relation;
+						rdfs:range	p4-lucat:Publication;
+						rdfs:comment	".";
+						dcterms:modified "2019-05-24"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+
+p4-lucat:annotation_isRelatedTo_Disease	rdf:type        owl:ObjectProperty;	
+					                rdfs:label	"annotation_isRelatedTo_Disease";
+									rdfs:domain	p4-lucat:Annotation;
+									rdfs:range	p4-lucat:Disorder;
+									rdfs:comment ".";
+									dcterms:modified "2020-10-29"^^xsd:date;
+									dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+p4-lucat:relation_isRelatedTo_Disease	rdf:type owl:ObjectProperty;	
+					                rdfs:label	"relation_isRelatedTo_Disease";
+									rdfs:domain	p4-lucat:Relation;
+									rdfs:range	p4-lucat:Disorder;
+									rdfs:comment ".";
+									dcterms:modified "2020-10-29"^^xsd:date;
+									dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+p4-lucat:hasTopicRelation_isRelatedTo_Disease	rdf:type owl:ObjectProperty;	
+							                rdfs:label	"hasTopicRelation_isRelatedTo_Disease";
+											rdfs:domain	p4-lucat:HAS_TOPIC;
+											rdfs:range	p4-lucat:Disorder;
+											rdfs:comment ".";
+											dcterms:modified "2020-10-29"^^xsd:date;
+											dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.									
+
+p4-lucat:mentionedInRelation_isRelatedTo_Disease	rdf:type owl:ObjectProperty;	
+								                rdfs:label	"mentionedInRelation_isRelatedTo_Disease";
+												rdfs:domain	p4-lucat:MENTIONED_IN;
+												rdfs:range	p4-lucat:Disorder;
+												rdfs:comment ".";
+												dcterms:modified "2020-10-29"^^xsd:date;
+												dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+p4-lucat:hasAuthor	rdf:type owl:ObjectProperty;	
+                rdfs:label	"hasAuthor";
+				rdfs:domain	p4-lucat:Publication;
+				rdfs:range	p4-lucat:Author;
+				rdfs:comment ".";
+				dcterms:modified "2020-10-29"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+p4-lucat:hasPublicationType	rdf:type owl:ObjectProperty;	
+		                rdfs:label	"hasPublicationType";
+						rdfs:domain	p4-lucat:Publication;
+						rdfs:range	p4-lucat:PublicationType;
+						rdfs:comment ".";
+						dcterms:modified "2020-10-29"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+#### Drug requirements:
+
+p4-lucat:drugDrugInteraction	rdf:type	owl:ObjectProperty;
+								rdfs:label	"drug_interactsWith_drug";
+								rdfs:domain	p4-lucat:Drug;
+								rdfs:range	p4-lucat:Drug;
+								rdfs:comment	"Represents drug-drug interactions.";
+								dcterms:modified "2018-07-24"^^xsd:date;
+								dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.									
+
+p4-lucat:drug_isRelatedTo_dse	rdf:type	owl:ObjectProperty;
+							rdfs:label	"drug_isRelatedTo_dse";
+							rdfs:domain	p4-lucat:Drug;
+							rdfs:range	p4-lucat:DrugSideEffect;
+							rdfs:comment	"Connection between drug and drug-sideEffect relation.";
+							dcterms:modified "2018-07-24"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+p4-lucat:sideEffect_isRelatedTo_dse	rdf:type	owl:ObjectProperty;
+									rdfs:label	"sideEffect_isRelatedTo_dse";
+									rdfs:domain	p4-lucat:Phenotype;
+									rdfs:range	p4-lucat:DrugSideEffect;
+									rdfs:comment	"Connection between sideEffect and drug-sideEffect relation.";
+									dcterms:modified "2018-07-24"^^xsd:date;
+									dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+p4-lucat:affects	rdf:type	owl:ObjectProperty;
+								rdfs:label	"affects";
+								rdfs:domain	p4-lucat:EffectInteraction;
+								rdfs:range	p4-lucat:Drug;
+								rdfs:comment	"The conncetion between drug that affects by the other one through their interaction and the interaction node.";
+								dcterms:modified "2018-11-27"^^xsd:date;
+								dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+p4-lucat:isAffected	rdf:type	owl:ObjectProperty;
+								rdfs:label	"isAffected";
+								rdfs:domain	p4-lucat:EffectInteraction;
+								rdfs:range	p4-lucat:Drug;
+								rdfs:comment	"The conncetion between drug that is affected by the other one through their interaction and the interaction node.";
+								dcterms:modified "2018-11-27"^^xsd:date;
+								dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+p4-lucat:enzyme_isRelatedTo_gene	rdf:type	owl:ObjectProperty;
+									rdfs:label	"enzyme_isRelatedTo_gene";
+									rdfs:domain	p4-lucat:Enzyme;
+									rdfs:range	p4-lucat:Gene;
+									rdfs:comment	"The connection between the enzyme and the gene from which it is produced.";
+									dcterms:modified "2018-10-30"^^xsd:date;
+									dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+p4-lucat:target_isRelatedTo_gene	rdf:type	owl:ObjectProperty;
+									rdfs:label	"target_isRelatedTo_gene";
+									rdfs:domain	p4-lucat:Target;
+									rdfs:range	p4-lucat:Gene;
+									rdfs:comment	"The connection between the target and the gene from which it is produced.";
+									dcterms:modified "2018-10-30"^^xsd:date;
+									dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+p4-lucat:biomarker_has_indication	rdf:type	owl:ObjectProperty;
+								rdfs:label	"biomarker_has_indication";
+								rdfs:domain	p4-lucat:Biomarker;
+								rdfs:range	p4-lucat:Drug;
+								rdfs:comment	"";
+								dcterms:modified "2019-01-07"^^xsd:date;
+								dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+p4-lucat:tumorStage_has_indication	rdf:type	owl:ObjectProperty;
+								rdfs:label	"tumorStage_has_indication";
+								rdfs:domain	p4-lucat:TumorStage;
+								rdfs:range	p4-lucat:Drug;
+								rdfs:comment	"";
+								dcterms:modified "2019-01-07"^^xsd:date;
+								dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+p4-lucat:object_drug	rdf:type	owl:ObjectProperty;
+							rdfs:label	"object_drug";
+							rdfs:domain	p4-lucat:DrugDrugInteraction;
+							rdfs:range	p4-lucat:Drug;
+							rdfs:comment	"Relation which connects the drug drug interacion to the object drug.";
+							dcterms:modified "2020-07-24"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
+
+p4-lucat:effect	rdf:type	owl:ObjectProperty;
+							rdfs:label	"effect";
+							rdfs:domain	p4-lucat:DrugDrugInteraction;
+							rdfs:range	p4-lucat:AdverseEvent;
+							rdfs:comment	"The relationship between the drug drug interaction and corresponding adverse event.";
+							dcterms:modified "2020-09-14"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.								
+
+p4-lucat:precipitant_drug	rdf:type	owl:ObjectProperty;
+							rdfs:label	"precipitant_drug";
+							rdfs:domain	p4-lucat:DrugDrugInteraction;
+							rdfs:range	p4-lucat:Drug;
+							rdfs:comment	"Relation which connects the drug drug interacion to the precipitant drug.";
+							dcterms:modified "2020-07-24"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.										
+
+p4-lucat:interactor1	rdf:type	owl:ObjectProperty;
+							rdfs:label	"interactor1";
+							rdfs:domain	p4-lucat:Interaction;
+							rdfs:range	p4-lucat:Drug;
+							rdfs:comment	"Relation which connects an interaction to the involved drug.";
+							dcterms:modified "2020-07-24"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+p4-lucat:interactor2	rdf:type	owl:ObjectProperty;
+							rdfs:label	"interactor2";
+							rdfs:domain	p4-lucat:Interaction;
+							rdfs:range	p4-lucat:Concept;
+							rdfs:comment	"Relation which connects an interacion to the second involved concept (e.g. disorder, enzyme,...).";
+							dcterms:modified "2020-07-24"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.							
+
+p4-lucat:interaction_isRelatedTo_Disease	rdf:type	owl:ObjectProperty;
+										rdfs:label	"interaction_isRelatedTo_Disease";
+										rdfs:domain	p4-lucat:Interaction;
+										rdfs:range	p4-lucat:Disorder;
+										rdfs:comment	"Connection between the interaction and disease.";
+										dcterms:modified "2020-10-29"^^xsd:date;
+										dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
+
+#### WP2 requirements:
+##### lc_notes:
+p4-lucat:hasPerformanceStatus	rdf:type        owl:ObjectProperty;	
+						rdfs:label	"hasPerformanceStatus";
+						rdfs:domain	p4-lucat:PerformanceObservation;
+						rdfs:range	p4-lucat:PerformanceStatus;
+						rdfs:comment	"Connection between patient with lung cancer and performance status observations.";
+						dcterms:modified "2018-11-27"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+p4-lucat:hasTki	rdf:type        owl:ObjectProperty;	
+				rdfs:label	"hasTki";
+						rdfs:domain	p4-lucat:LCPatient;
+						rdfs:range	p4-lucat:Drug;
+						rdfs:comment	"Connection between patient with lung cancer and the tki drugs that has been prescribed.";
+						dcterms:modified "2018-11-27"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+p4-lucat:hasImmunotherapy	rdf:type        owl:ObjectProperty;	
+				rdfs:label	"hasImmunotherapy";
+						rdfs:domain	p4-lucat:LCPatient;
+						rdfs:range	p4-lucat:Drug;
+						rdfs:comment	"Connection between patient with lung cancer and the immunotherapy drugs that has been prescribed.";
+						dcterms:modified "2018-11-27"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+p4-lucat:hasFamiliarAntecedent	rdf:type        owl:ObjectProperty;	
+				rdfs:label	"hasFamiliarAntecedent";
+						rdfs:domain	p4-lucat:LCPatient;
+						rdfs:range	p4-lucat:FamiliarAntecedent;
+						rdfs:comment	"Connection between patient with lung cancer and her/his familiar antecedents.";
+						dcterms:modified "2018-11-27"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+p4-lucat:hasDrugGroup	rdf:type        owl:ObjectProperty;	
+				rdfs:label	"hasDrug";
+						rdfs:domain	p4-lucat:LCPatient;
+						rdfs:range	p4-lucat:DrugGroup;
+						rdfs:comment	"Connection between patient with lung cancer and the types of drugs that has been prescribed.";
+						dcterms:modified "2017-10-04"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+
+p4-lucat:hasComorbidity	rdf:type        owl:ObjectProperty;	
+				rdfs:label	"hasComorbidity";
+						rdfs:domain	p4-lucat:LCPatient;
+						rdfs:range	p4-lucat:Disorder;
+						rdfs:comment	"Connection between patient with lung cancer and her/his Comorbidities.";
+						dcterms:modified "2018-11-27"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+p4-lucat:hasChemotherapy	rdf:type        owl:ObjectProperty;	
+				rdfs:label	"hasChemotherapy";
+						rdfs:domain	p4-lucat:LCPatient;
+						rdfs:range	p4-lucat:Drug;
+						rdfs:comment	"Connection between patient with lung cancer and the Chemotherapy drugs that has been prescribed.";
+						dcterms:modified "2018-11-27"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+p4-lucat:hasLiquidBiopsy	rdf:type        owl:ObjectProperty;	
+				rdfs:label	"hasLiquidBiopsy";
+						rdfs:domain	p4-lucat:LCPatient;
+						rdfs:range	p4-lucat:LiquidBiopsy;
+						rdfs:comment	"Connection between patient with lung cancer and the liquid biopsy tests that has been run.";
+						dcterms:modified "2017-10-04"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+p4-lucat:hasMutation	rdf:type        owl:ObjectProperty;	
+				rdfs:label	"hasMutation";
+						rdfs:domain	p4-lucat:LiquidBiopsy;
+						rdfs:range	p4-lucat:Mutation;
+						rdfs:comment	"Connection between liquid biopsy test and the mutation that has been observed.";
+						dcterms:modified "2017-10-04"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+p4-lucat:hasPerformanceObservation	rdf:type        owl:ObjectProperty;	
+				rdfs:label	"hasPerformanceObservation";
+						rdfs:domain	p4-lucat:LCPatient;
+						rdfs:range	p4-lucat:PerformanceObservation;
+						rdfs:comment	"";
+						dcterms:modified "2019-01-30"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+p4-lucat:gender	rdf:type	owl:ObjectProperty;
+				rdfs:label	"gender";
+				rdfs:domain	p4-lucat:LCPatient;
+				rdfs:range	p4-lucat:Gender;
+				rdfs:comment	"Gender value of the patient.";
+				dcterms:modified "2018-01-14"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+p4-lucat:tumorType	rdf:type	owl:ObjectProperty;
+				rdfs:label	"tumorType";
+				rdfs:domain	p4-lucat:LCPatient;
+				rdfs:range	p4-lucat:TumorType;
+				rdfs:comment	"tumorType";
+				dcterms:modified "2019-01-30"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+p4-lucat:hasTumorStage	rdf:type        owl:ObjectProperty;	
+				rdfs:label	"hasTumorStage";
+						rdfs:domain	p4-lucat:TumorObservation;
+						rdfs:range	p4-lucat:TumorStage;
+						rdfs:comment	".";
+						dcterms:modified "2018-11-27"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+
+p4-lucat:hasTumorObservation	rdf:type        owl:ObjectProperty;	
+				rdfs:label	"hasTumorObservation";
+						rdfs:domain	p4-lucat:LCPatient;
+						rdfs:range	p4-lucat:TumorObservation;
+						rdfs:comment	".";
+						dcterms:modified "2019-01-30"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+p4-lucat:hasToxicityObservation	rdf:type        owl:ObjectProperty;	
+				rdfs:label	"hasToxicityObservation";
+						rdfs:domain	p4-lucat:LCPatient;
+						rdfs:range	p4-lucat:ToxicityObservation;
+						rdfs:comment ".";
+						dcterms:modified "2019-05-24"^^xsd:date;
+						dcterms:creator  <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+
+p4-lucat:hasToxicity	rdf:type        owl:ObjectProperty;	
+				rdfs:label	"hasToxicity";
+						rdfs:domain	p4-lucat:ToxicityObservation;
+						rdfs:range	p4-lucat:Phenotype;
+						rdfs:comment	".";
+						dcterms:modified "2019-05-24"^^xsd:date;
+						dcterms:creator  <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+
+p4-lucat:hasNonOncologicalDrug	rdf:type        owl:ObjectProperty;	
+				        rdfs:label	"hasNonOncologicalDrug";
+						rdfs:domain	p4-lucat:LCPatient;
+						rdfs:range	p4-lucat:Drug;
+						rdfs:comment "Relation between the patient and the non-oncological line of treamtment.";
+						dcterms:modified "2020-07-21"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
+
+p4-lucat:hasNonOncologicalDrugInFirstTreatmentLine	rdf:type        owl:ObjectProperty;	
+										        rdfs:label	"hasNonOncologicalDrugInFirstTreatmentLine";
+										        rdfs:subPropertyOf p4-lucat:hasNonOncologicalDrug;
+												rdfs:domain	p4-lucat:LCPatient;
+												rdfs:range	p4-lucat:Drug;
+												rdfs:comment "Relation between the patient and the non-oncological drug which is prescibed before/during the first oncological line of treamtment.";
+												dcterms:modified "2020-11-13"^^xsd:date;
+												dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
+
+p4-lucat:hasOncologicalTreatmentLine	rdf:type        owl:ObjectProperty;	
+				        rdfs:label	"hasOncologicalTreatmentLine";
+						rdfs:domain	p4-lucat:LCPatient;
+						rdfs:range	p4-lucat:OncologicalTreatmentLine;
+						rdfs:comment "Relation between the patient and the oncological line of treamtment.";
+						dcterms:modified "2020-07-21"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
+
+p4-lucat:treatment_has_oncologicalDrug	rdf:type        owl:ObjectProperty;	
+				        rdfs:label	"treatment_has_oncologicalDrug";
+						rdfs:domain	p4-lucat:OncologicalTreatmentLine;
+						rdfs:range	p4-lucat:Drug;
+						rdfs:comment "Relation between the treatment line and the oncological drugs.";
+						dcterms:modified "2020-07-22"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.		
+
+p4-lucat:treatment_has_nonOncologicalDrug	rdf:type        owl:ObjectProperty;	
+				        rdfs:label	"treatmentInitDate";
+						rdfs:domain	p4-lucat:NonOncologicalTreatmentLine;
+						rdfs:range	p4-lucat:Drug;
+						rdfs:comment "Relation between the treatment line and the non-oncological drugs.";
+						dcterms:modified "2020-07-21"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.																																																								
+
+p4-lucat:hasOncologicalSurgery	rdf:type        owl:ObjectProperty;	
+				        rdfs:label	"hasOncologicalSurgery";
+						rdfs:domain	p4-lucat:LCPatient;
+						rdfs:range	p4-lucat:OncologicalSurgery;
+						rdfs:comment "Relation between the patient and the surgey that has been performed on.";
+						dcterms:modified "2020-07-21"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.							
+
+p4-lucat:hasHospitalProcess	rdf:type        owl:ObjectProperty;	
+				        rdfs:label	"hasHospitalProcess";
+						rdfs:domain	p4-lucat:LCPatient;
+						rdfs:range	p4-lucat:HospitalProcess;
+						rdfs:comment "Relation between the patient to which the hospital process belongs and the hospital process.";
+						dcterms:modified "2020-07-21"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.																							
+
+p4-lucat:hasHospitalService	rdf:type        owl:ObjectProperty;	
+						        rdfs:label	"hasHospitalService";
+								rdfs:domain	p4-lucat:LCPatient;
+								rdfs:range	p4-lucat:HospitalService;
+								rdfs:comment "";
+								dcterms:modified "2020-12-21"^^xsd:date;
+								dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
+##### lc_images:
+p4-lucat:hasImage       rdf:type     owl:ObjectProperty;
+							rdfs:label	"hasImage";
+							rdfs:domain	p4-lucat:LCPatient;
+							rdfs:range	p4-lucat:LCImage;
+							rdfs:comment ".";
+							dcterms:modified "2018-11-27"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+
+p4-lucat:imageType      rdf:type     owl:ObjectProperty;
+							rdfs:label	"imageType";
+							rdfs:domain	p4-lucat:LCImage;
+							rdfs:range	rdfs:Literal;
+							rdfs:comment ".";
+							dcterms:modified "2019-01-30"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+p4-lucat:modality      rdf:type     owl:ObjectProperty;
+							rdfs:label	"modality";
+							rdfs:domain	p4-lucat:LCImage;
+							rdfs:range	p4-lucat:Modality;
+							rdfs:comment ".";
+							dcterms:modified "2018-11-27"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+
+p4-lucat:bodyPartExamined      rdf:type     owl:ObjectProperty;
+							rdfs:label	"bodyPartExamined";
+							rdfs:domain	p4-lucat:LCImage;
+							rdfs:range	p4-lucat:BodyPartExamined;
+							rdfs:comment ".";
+							dcterms:modified "2018-11-25"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+
+p4-lucat:patientPosition      rdf:type     owl:ObjectProperty;
+							rdfs:label	"patientPosition";
+							rdfs:domain	p4-lucat:LCImage;
+							rdfs:range	p4-lucat:PatientPosition;
+							rdfs:comment ".";
+							dcterms:modified "2018-11-27"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+
+p4-lucat:lungLaterality      rdf:type     owl:ObjectProperty;
+							rdfs:label	"lungLaterality";
+							rdfs:domain	p4-lucat:Organ;
+							rdfs:range	p4-lucat:LungLaterality;
+							rdfs:comment ".";
+							dcterms:modified "2018-11-27"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+
+p4-lucat:hasOrgans     rdf:type     owl:ObjectProperty;
+							rdfs:label	"hasOrgans";
+							rdfs:domain	p4-lucat:LCImage;
+							rdfs:range	p4-lucat:Organ;
+							rdfs:comment ".";
+							dcterms:modified "2018-11-27"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+
+p4-lucat:hasDiagnosis     rdf:type     owl:ObjectProperty;
+							rdfs:label	"hasDiagnosis";
+							rdfs:domain	p4-lucat:LCPatient;
+							rdfs:range	p4-lucat:Diagnosis;
+							rdfs:comment ".";
+							dcterms:modified "2018-11-27"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+
+p4-lucat:hasDiagnosis_imageBased     rdf:type     owl:ObjectProperty;
+							rdfs:label	"hasDiagnosis_imageBased";
+							rdfs:domain	p4-lucat:LCPatient;
+							rdfs:range	p4-lucat:Diagnosis;
+							rdfs:comment ".";
+							dcterms:modified "2019-01-30"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+
+p4-lucat:hasDiagnosisTumorStage   rdf:type     owl:ObjectProperty;
+							rdfs:label	"hasDiagnosisTumorStage";
+							rdfs:domain	p4-lucat:Diagnosis;
+							rdfs:range	p4-lucat:TumorStage;
+							rdfs:comment ".";
+							dcterms:modified "2018-11-27"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+
+p4-lucat:hasDiagnosisTumorType   rdf:type     owl:ObjectProperty;
+							rdfs:label	"hasDiagnosisTumorType";
+							rdfs:domain	p4-lucat:Diagnosis;
+							rdfs:range	p4-lucat:TumorType;
+							rdfs:comment ".";
+							dcterms:modified "2019-05-23"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+
+p4-lucat:hasDiagnosisPerformanceStatus   rdf:type     owl:ObjectProperty;
+							rdfs:label	"hasDiagnosisPerformanceStatus";
+							rdfs:domain	p4-lucat:Diagnosis;
+							rdfs:range	p4-lucat:PerformanceStatus;
+							rdfs:comment ".";
+							dcterms:modified "2019-05-24"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+
+####### lc_similarity:
+p4-lucat:isBetweenPatients	rdf:type        owl:ObjectProperty;	
+				                rdfs:label	"isBetweenPatients";
+						rdfs:domain	p4-lucat:PatientSimilarity;
+						rdfs:range	p4-lucat:LCPatient;
+						rdfs:comment	".";
+						dcterms:modified "2018-11-27"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+
+################################### DatatypeProperties ###################################################
 p4-lucat:briefSummary  rdf:type owl:DatatypeProperty;
                                         rdfs:subPropertyOf owl:topDataProperty;
                                         rdfs:domain p4-lucat:ClinicalTrial;
@@ -845,142 +1499,6 @@ p4-lucat:semanticTypeGroup	rdf:type	owl:DatatypeProperty;
 				dcterms:modified "2020-10-05"^^xsd:date;
 				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.								
 
-p4-lucat:CTHasKeyword  rdf:type owl:ObjectProperty;
-                                        rdfs:subPropertyOf owl:topObjectProperty;
-                                        rdfs:domain p4-lucat:ClinicalTrial;
-                                        rdfs:range p4-lucat:Keyword;
-                                        rdfs:comment "This property shows association of clinical trials to medical keywords."@en;
-                                        rdfs:isDefinedBy "emetis_niazmand"@en;
-                                        rdfs:label "CTHasKeyword"@en;
-                                        owl:versionInfo "v1.0"@en.
-
-
-
-p4-lucat:CTInPublication  rdf:type owl:ObjectProperty;
-                                           rdfs:subPropertyOf owl:topObjectProperty;
-                                           rdfs:domain p4-lucat:ClinicalTrial;
-                                           rdfs:range p4-lucat:Publication;
-                                           rdfs:comment "This property shows association of clinical trials to scientific publication."@en;
-                                           rdfs:isDefinedBy "emetis_niazmand"@en;
-                                           rdfs:label "CTInPublication"@en;
-                                           owl:versionInfo "v1.0"@en.
-
-
-
-p4-lucat:CTOnCondition  rdf:type owl:ObjectProperty;
-                                         rdfs:subPropertyOf owl:topObjectProperty;
-                                         rdfs:domain p4-lucat:ClinicalTrial;
-                                         rdfs:range p4-lucat:Condition;
-                                         rdfs:comment "This property shows association of clinical trials to condition."@en;
-                                         rdfs:isDefinedBy "emetis_niazmand"@en;
-                                         rdfs:label "CTOnCondition"@en;
-                                         owl:versionInfo "v1.0"@en.
-
-
-
-p4-lucat:CTOnIntervention  rdf:type owl:ObjectProperty;
-                                            rdfs:subPropertyOf owl:topObjectProperty;
-                                            rdfs:domain p4-lucat:ClinicalTrial;
-                                            rdfs:range p4-lucat:Intervention;
-                                            rdfs:comment "This property shows association of clinical trials to intervention."@en;
-                                            rdfs:isDefinedBy "emetis_niazmand"@en;
-                                            rdfs:label "CTOnIntervention"@en;
-                                            owl:versionInfo "v1.0"@en.
-
-
-p4-lucat:ConditionInCT  rdf:type owl:ObjectProperty;
-                                         rdfs:subPropertyOf owl:topObjectProperty;
-                                         rdfs:domain p4-lucat:Condition;
-                                         rdfs:range p4-lucat:ClinicalTrial;
-                                         rdfs:comment "This property shows association of condition to clinical trials."@en;
-                                         rdfs:isDefinedBy "emetis_niazmand"@en;
-                                         rdfs:label "ConditionInCT"@en;
-                                         owl:versionInfo "v1.0"@en.
-
-
-
-p4-lucat:DesignInterventionModel  rdf:type owl:ObjectProperty;
-                                                   rdfs:subPropertyOf owl:topObjectProperty;
-                                                   rdfs:domain p4-lucat:ClinicalTrial;
-                                                   rdfs:range p4-lucat:Assignment;
-                                                   rdfs:comment "This property shows association of clinical trials to assignment (e.g., Single or Parallel Assignment)."@en;
-                                                   rdfs:isDefinedBy "emetis_niazmand"@en;
-                                                   rdfs:label "DesignInterventionModel"@en;
-                                                   owl:versionInfo "v1.0"@en.
-
-
-p4-lucat:GenderInCT  rdf:type owl:ObjectProperty;
-                                      rdfs:subPropertyOf owl:topObjectProperty;
-                                      rdfs:domain p4-lucat:ClinicalTrial;
-                                      rdfs:range p4-lucat:Sex;
-                                      rdfs:comment "This property shows association of clinical trials to gender."@en;
-                                      rdfs:isDefinedBy "emetis_niazmand"@en;
-                                      rdfs:label "GenderInCT"@en;
-                                      owl:versionInfo "v1.0"@en.
-
-
-p4-lucat:InterventionInCT  rdf:type owl:ObjectProperty;
-                                            rdfs:subPropertyOf owl:topObjectProperty;
-                                            rdfs:domain p4-lucat:Intervention;
-                                            rdfs:range p4-lucat:ClinicalTrial;
-                                            rdfs:comment "This property shows association of intervention to clinical trials."@en;
-                                            rdfs:isDefinedBy "emetis_niazmand"@en;
-                                            rdfs:label "InterventionInCT"@en;
-                                            owl:versionInfo "v1.0"@en.
-
-
-p4-lucat:KeywordMentionedInCT  rdf:type owl:ObjectProperty;
-                                                rdfs:subPropertyOf owl:topObjectProperty;
-                                                rdfs:domain p4-lucat:Keyword;
-                                                rdfs:range p4-lucat:ClinicalTrial;
-                                                rdfs:comment "This property shows association of medical keywords to clinical trials."@en;
-                                                rdfs:isDefinedBy "emetis_niazmand"@en;
-                                                rdfs:label "KeywordMentionedInCT"@en;
-                                                owl:versionInfo "v1.0"@en.
-
-
-p4-lucat:PubOfCT  rdf:type owl:ObjectProperty;
-                                   rdfs:subPropertyOf owl:topObjectProperty;
-                                   rdfs:domain p4-lucat:Publication;
-                                   rdfs:range p4-lucat:ClinicalTrial;
-                                   rdfs:comment "This property shows association of scientific publication to clinical trials."@en;
-                                   rdfs:isDefinedBy "emetis_niazmand"@en;
-                                   rdfs:label "PubOfCT"@en;
-                                   owl:versionInfo "v1.0"@en.
-
-
-p4-lucat:provenance	rdf:type	owl:ObjectProperty;
-					rdfs:label	"provenance";
-					rdfs:domain p4-lucat:Concept;
-					rdfs:range	p4-lucat:SourceName;
-					rdfs:comment	"The name of the source from which the concept is extracted or derived";
-					dcterms:modified "2017-11-23"^^xsd:date;
-					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/>.
-
-p4-lucat:hasAnnotation	rdf:type owl:ObjectProperty;
-								rdfs:label	"hasAnnotation";
-								rdfs:domain p4-lucat:Relation;
-				  				rdfs:range p4-lucat:Annotation;
-								rdfs:comment	"Connection between the annotation and the relation between annotation and publication";
-								dcterms:modified "2019-01-30"^^xsd:date;
-								dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-p4-lucat:hasCUIAnnotation	rdf:type owl:ObjectProperty;
-								rdfs:label	"hasCUIAnnotation";
-								rdfs:domain p4-lucat:Concept;
-				  				rdfs:range p4-lucat:Annotation;
-								rdfs:comment	"CUI annotation of the concept.";
-								dcterms:modified "2019-01-29"^^xsd:date;
-								dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-
-p4-lucat:hasHPOAnnotation	rdf:type owl:ObjectProperty;
-								rdfs:label	"hasHPOAnnotation";
-								rdfs:domain p4-lucat:Phenotype;
-				  				rdfs:range p4-lucat:Annotation;
-								rdfs:comment	"HPO annotation of the phenotype.";
-								dcterms:modified "2019-01-30"^^xsd:date;
-								dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 
 #### WP4 requirements:
@@ -1009,13 +1527,6 @@ p4-lucat:year	rdf:type	owl:DatatypeProperty;
 			dcterms:modified "2018-04-12"^^xsd:date;
 			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-p4-lucat:author	rdf:type	owl:ObjectProperty;
-				rdfs:label	"authors";
-				rdfs:domain	p4-lucat:Publication;
-				rdfs:range	p4-lucat:Author;
-				rdfs:comment	"Authors of publication";
-				dcterms:modified "2019-05-24"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 p4-lucat:authorName	rdf:type	owl:DatatypeProperty;
 				rdfs:label	"authorName";
@@ -1067,21 +1578,6 @@ p4-lucat:authorAffiliation	rdf:type	owl:DatatypeProperty;
 				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 
-p4-lucat:annotates	rdf:type	owl:ObjectProperty;
-							rdfs:label	"annotates";
-							rdfs:domain	p4-lucat:Relation;
-							rdfs:range	p4-lucat:Publication;
-							rdfs:comment	"Connection between mentionedIn or HasTopic relation with CUI.";
-							dcterms:modified "2019-05-24"^^xsd:date;
-							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-p4-lucat:publication_isRelatedTo_Disease	rdf:type	owl:ObjectProperty;
-							rdfs:label	"publication_isRelatedTo_Disease";
-							rdfs:domain	p4-lucat:Publication;
-							rdfs:range	p4-lucat:Disorder;
-							rdfs:comment	"";
-							dcterms:modified "2019-05-24"^^xsd:date;
-							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 p4-lucat:confidence     rdf:type     owl:DatatypeProperty;
 							rdfs:label	"confidence";
@@ -1099,22 +1595,6 @@ p4-lucat:negation     rdf:type     owl:DatatypeProperty;
 							dcterms:modified "2019-05-24"^^xsd:date;
 							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
-p4-lucat:relation_isRelatedTo_annotation	rdf:type        owl:ObjectProperty;	
-				                rdfs:label	"relation_isRelatedTo_annotation";
-						rdfs:domain	p4-lucat:Relation;
-						rdfs:range	p4-lucat:Annotation;
-						rdfs:comment	".";
-						dcterms:modified "2018-11-27"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
-
-
-p4-lucat:relation_isRelatedTo_publication	rdf:type        owl:ObjectProperty;	
-				                rdfs:label	"relation_isRelatedTo_publication";
-						rdfs:domain	p4-lucat:Relation;
-						rdfs:range	p4-lucat:Publication;
-						rdfs:comment	".";
-						dcterms:modified "2019-05-24"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 p4-lucat:title     rdf:type     owl:DatatypeProperty;
 							rdfs:label	"title";
@@ -1124,37 +1604,6 @@ p4-lucat:title     rdf:type     owl:DatatypeProperty;
 							dcterms:modified "2018-11-27"^^xsd:date;
 							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
-p4-lucat:annotation_isRelatedTo_Disease	rdf:type        owl:ObjectProperty;	
-					                rdfs:label	"annotation_isRelatedTo_Disease";
-									rdfs:domain	p4-lucat:Annotation;
-									rdfs:range	p4-lucat:Disorder;
-									rdfs:comment ".";
-									dcterms:modified "2020-10-29"^^xsd:date;
-									dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-p4-lucat:relation_isRelatedTo_Disease	rdf:type owl:ObjectProperty;	
-					                rdfs:label	"relation_isRelatedTo_Disease";
-									rdfs:domain	p4-lucat:Relation;
-									rdfs:range	p4-lucat:Disorder;
-									rdfs:comment ".";
-									dcterms:modified "2020-10-29"^^xsd:date;
-									dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-p4-lucat:hasTopicRelation_isRelatedTo_Disease	rdf:type owl:ObjectProperty;	
-							                rdfs:label	"hasTopicRelation_isRelatedTo_Disease";
-											rdfs:domain	p4-lucat:HAS_TOPIC;
-											rdfs:range	p4-lucat:Disorder;
-											rdfs:comment ".";
-											dcterms:modified "2020-10-29"^^xsd:date;
-											dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.									
-
-p4-lucat:mentionedInRelation_isRelatedTo_Disease	rdf:type owl:ObjectProperty;	
-								                rdfs:label	"mentionedInRelation_isRelatedTo_Disease";
-												rdfs:domain	p4-lucat:MENTIONED_IN;
-												rdfs:range	p4-lucat:Disorder;
-												rdfs:comment ".";
-												dcterms:modified "2020-10-29"^^xsd:date;
-												dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 p4-lucat:publicationTypeName	rdf:type owl:DatatypeProperty;	
 			                rdfs:label	"publicationTypeName";
@@ -1164,21 +1613,6 @@ p4-lucat:publicationTypeName	rdf:type owl:DatatypeProperty;
 							dcterms:modified "2020-10-29"^^xsd:date;
 							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-p4-lucat:hasAuthor	rdf:type owl:ObjectProperty;	
-                rdfs:label	"hasAuthor";
-				rdfs:domain	p4-lucat:Publication;
-				rdfs:range	p4-lucat:Author;
-				rdfs:comment ".";
-				dcterms:modified "2020-10-29"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-p4-lucat:hasPublicationType	rdf:type owl:ObjectProperty;	
-		                rdfs:label	"hasPublicationType";
-						rdfs:domain	p4-lucat:Publication;
-						rdfs:range	p4-lucat:PublicationType;
-						rdfs:comment ".";
-						dcterms:modified "2020-10-29"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 p4-lucat:citedBy	rdf:type owl:DatatypeProperty;	
                 rdfs:label	"citedBy";
@@ -1247,29 +1681,6 @@ p4-lucat:enzymeLabel	rdf:type owl:DatatypeProperty;
 					dcterms:modified "2018-09-26"^^xsd:date;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-p4-lucat:drugDrugInteraction	rdf:type	owl:ObjectProperty;
-								rdfs:label	"drug_interactsWith_drug";
-								rdfs:domain	p4-lucat:Drug;
-								rdfs:range	p4-lucat:Drug;
-								rdfs:comment	"Represents drug-drug interactions.";
-								dcterms:modified "2018-07-24"^^xsd:date;
-								dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.									
-
-p4-lucat:drug_isRelatedTo_dse	rdf:type	owl:ObjectProperty;
-							rdfs:label	"drug_isRelatedTo_dse";
-							rdfs:domain	p4-lucat:Drug;
-							rdfs:range	p4-lucat:DrugSideEffect;
-							rdfs:comment	"Connection between drug and drug-sideEffect relation.";
-							dcterms:modified "2018-07-24"^^xsd:date;
-							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-p4-lucat:sideEffect_isRelatedTo_dse	rdf:type	owl:ObjectProperty;
-									rdfs:label	"sideEffect_isRelatedTo_dse";
-									rdfs:domain	p4-lucat:Phenotype;
-									rdfs:range	p4-lucat:DrugSideEffect;
-									rdfs:comment	"Connection between sideEffect and drug-sideEffect relation.";
-									dcterms:modified "2018-07-24"^^xsd:date;
-									dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 p4-lucat:dse_AvgFrequency	rdf:type	owl:DatatypeProperty;
 						rdfs:label	"dse_AvgFrequency";
@@ -1287,29 +1698,6 @@ p4-lucat:externalLink	rdf:type owl:DatatypeProperty;
 					dcterms:modified "2018-09-26"^^xsd:date;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-p4-lucat:affects	rdf:type	owl:ObjectProperty;
-								rdfs:label	"affects";
-								rdfs:domain	p4-lucat:EffectInteraction;
-								rdfs:range	p4-lucat:Drug;
-								rdfs:comment	"The conncetion between drug that affects by the other one through their interaction and the interaction node.";
-								dcterms:modified "2018-11-27"^^xsd:date;
-								dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-p4-lucat:isAffected	rdf:type	owl:ObjectProperty;
-								rdfs:label	"isAffected";
-								rdfs:domain	p4-lucat:EffectInteraction;
-								rdfs:range	p4-lucat:Drug;
-								rdfs:comment	"The conncetion between drug that is affected by the other one through their interaction and the interaction node.";
-								dcterms:modified "2018-11-27"^^xsd:date;
-								dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-p4-lucat:enzyme_isRelatedTo_gene	rdf:type	owl:ObjectProperty;
-									rdfs:label	"enzyme_isRelatedTo_gene";
-									rdfs:domain	p4-lucat:Enzyme;
-									rdfs:range	p4-lucat:Gene;
-									rdfs:comment	"The connection between the enzyme and the gene from which it is produced.";
-									dcterms:modified "2018-10-30"^^xsd:date;
-									dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 p4-lucat:targetID	rdf:type owl:DatatypeProperty;
 					rdfs:label "targetID";
@@ -1343,13 +1731,6 @@ p4-lucat:proteinLabel	rdf:type owl:DatatypeProperty;
 					dcterms:modified "2020-07-24"^^xsd:date;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-p4-lucat:target_isRelatedTo_gene	rdf:type	owl:ObjectProperty;
-									rdfs:label	"target_isRelatedTo_gene";
-									rdfs:domain	p4-lucat:Target;
-									rdfs:range	p4-lucat:Gene;
-									rdfs:comment	"The connection between the target and the gene from which it is produced.";
-									dcterms:modified "2018-10-30"^^xsd:date;
-									dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 p4-lucat:uniprotID	rdf:type owl:DatatypeProperty;
 					rdfs:label "uniprotID";
@@ -1375,21 +1756,6 @@ p4-lucat:disorderLabel_SPA 	rdf:type owl:DatatypeProperty;
 					dcterms:modified "2018-11-25"^^xsd:date;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
-p4-lucat:biomarker_has_indication	rdf:type	owl:ObjectProperty;
-								rdfs:label	"biomarker_has_indication";
-								rdfs:domain	p4-lucat:Biomarker;
-								rdfs:range	p4-lucat:Drug;
-								rdfs:comment	"";
-								dcterms:modified "2019-01-07"^^xsd:date;
-								dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-p4-lucat:tumorStage_has_indication	rdf:type	owl:ObjectProperty;
-								rdfs:label	"tumorStage_has_indication";
-								rdfs:domain	p4-lucat:TumorStage;
-								rdfs:range	p4-lucat:Drug;
-								rdfs:comment	"";
-								dcterms:modified "2019-01-07"^^xsd:date;
-								dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 p4-lucat:impact	rdf:type	owl:DatatypeProperty;
 						rdfs:lasbel	"impact";
@@ -1399,29 +1765,6 @@ p4-lucat:impact	rdf:type	owl:DatatypeProperty;
 						dcterms:modified "2020-09-14"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.			
 
-p4-lucat:object_drug	rdf:type	owl:ObjectProperty;
-							rdfs:label	"object_drug";
-							rdfs:domain	p4-lucat:DrugDrugInteraction;
-							rdfs:range	p4-lucat:Drug;
-							rdfs:comment	"Relation which connects the drug drug interacion to the object drug.";
-							dcterms:modified "2020-07-24"^^xsd:date;
-							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
-
-p4-lucat:effect	rdf:type	owl:ObjectProperty;
-							rdfs:label	"effect";
-							rdfs:domain	p4-lucat:DrugDrugInteraction;
-							rdfs:range	p4-lucat:AdverseEvent;
-							rdfs:comment	"The relationship between the drug drug interaction and corresponding adverse event.";
-							dcterms:modified "2020-09-14"^^xsd:date;
-							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.								
-
-p4-lucat:precipitant_drug	rdf:type	owl:ObjectProperty;
-							rdfs:label	"precipitant_drug";
-							rdfs:domain	p4-lucat:DrugDrugInteraction;
-							rdfs:range	p4-lucat:Drug;
-							rdfs:comment	"Relation which connects the drug drug interacion to the precipitant drug.";
-							dcterms:modified "2020-07-24"^^xsd:date;
-							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.										
 
 p4-lucat:toxicityType	rdf:type	owl:DatatypeProperty;
 							rdfs:label	"toxicityType";
@@ -1431,21 +1774,6 @@ p4-lucat:toxicityType	rdf:type	owl:DatatypeProperty;
 							dcterms:modified "2020-07-24"^^xsd:date;
 							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
 
-p4-lucat:interactor1	rdf:type	owl:ObjectProperty;
-							rdfs:label	"interactor1";
-							rdfs:domain	p4-lucat:Interaction;
-							rdfs:range	p4-lucat:Drug;
-							rdfs:comment	"Relation which connects an interaction to the involved drug.";
-							dcterms:modified "2020-07-24"^^xsd:date;
-							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-p4-lucat:interactor2	rdf:type	owl:ObjectProperty;
-							rdfs:label	"interactor2";
-							rdfs:domain	p4-lucat:Interaction;
-							rdfs:range	p4-lucat:Concept;
-							rdfs:comment	"Relation which connects an interacion to the second involved concept (e.g. disorder, enzyme,...).";
-							dcterms:modified "2020-07-24"^^xsd:date;
-							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.							
 
 p4-lucat:predictionMethod	rdf:type	owl:DatatypeProperty;
 							rdfs:label	"predictionMethod";
@@ -1463,48 +1791,10 @@ p4-lucat:methodAbbreviation	rdf:type	owl:DatatypeProperty;
 							dcterms:modified "2020-10-29"^^xsd:date;
 							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
 
-p4-lucat:interaction_isRelatedTo_Disease	rdf:type	owl:ObjectProperty;
-										rdfs:label	"interaction_isRelatedTo_Disease";
-										rdfs:domain	p4-lucat:Interaction;
-										rdfs:range	p4-lucat:Disorder;
-										rdfs:comment	"Connection between the interaction and disease.";
-										dcterms:modified "2020-10-29"^^xsd:date;
-										dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
 
 #### WP2 requirements:
 ##### lc_notes:
 
-p4-lucat:hasPerformanceStatus	rdf:type        owl:ObjectProperty;	
-						rdfs:label	"hasPerformanceStatus";
-						rdfs:domain	p4-lucat:PerformanceObservation;
-						rdfs:range	p4-lucat:PerformanceStatus;
-						rdfs:comment	"Connection between patient with lung cancer and performance status observations.";
-						dcterms:modified "2018-11-27"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-p4-lucat:hasTki	rdf:type        owl:ObjectProperty;	
-				rdfs:label	"hasTki";
-						rdfs:domain	p4-lucat:LCPatient;
-						rdfs:range	p4-lucat:Drug;
-						rdfs:comment	"Connection between patient with lung cancer and the tki drugs that has been prescribed.";
-						dcterms:modified "2018-11-27"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-p4-lucat:hasImmunotherapy	rdf:type        owl:ObjectProperty;	
-				rdfs:label	"hasImmunotherapy";
-						rdfs:domain	p4-lucat:LCPatient;
-						rdfs:range	p4-lucat:Drug;
-						rdfs:comment	"Connection between patient with lung cancer and the immunotherapy drugs that has been prescribed.";
-						dcterms:modified "2018-11-27"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-p4-lucat:hasFamiliarAntecedent	rdf:type        owl:ObjectProperty;	
-				rdfs:label	"hasFamiliarAntecedent";
-						rdfs:domain	p4-lucat:LCPatient;
-						rdfs:range	p4-lucat:FamiliarAntecedent;
-						rdfs:comment	"Connection between patient with lung cancer and her/his familiar antecedents.";
-						dcterms:modified "2018-11-27"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 p4-lucat:familiarAntecedentLabel_ENG	rdf:type        owl:DatatypeProperty;	
 				rdfs:label	"familiarAntecedentLabel_ENG";
@@ -1514,46 +1804,6 @@ p4-lucat:familiarAntecedentLabel_ENG	rdf:type        owl:DatatypeProperty;
 						dcterms:modified "2018-11-27"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
-p4-lucat:hasDrugGroup	rdf:type        owl:ObjectProperty;	
-				rdfs:label	"hasDrug";
-						rdfs:domain	p4-lucat:LCPatient;
-						rdfs:range	p4-lucat:DrugGroup;
-						rdfs:comment	"Connection between patient with lung cancer and the types of drugs that has been prescribed.";
-						dcterms:modified "2017-10-04"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-
-p4-lucat:hasComorbidity	rdf:type        owl:ObjectProperty;	
-				rdfs:label	"hasComorbidity";
-						rdfs:domain	p4-lucat:LCPatient;
-						rdfs:range	p4-lucat:Disorder;
-						rdfs:comment	"Connection between patient with lung cancer and her/his Comorbidities.";
-						dcterms:modified "2018-11-27"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-p4-lucat:hasChemotherapy	rdf:type        owl:ObjectProperty;	
-				rdfs:label	"hasChemotherapy";
-						rdfs:domain	p4-lucat:LCPatient;
-						rdfs:range	p4-lucat:Drug;
-						rdfs:comment	"Connection between patient with lung cancer and the Chemotherapy drugs that has been prescribed.";
-						dcterms:modified "2018-11-27"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-p4-lucat:hasLiquidBiopsy	rdf:type        owl:ObjectProperty;	
-				rdfs:label	"hasLiquidBiopsy";
-						rdfs:domain	p4-lucat:LCPatient;
-						rdfs:range	p4-lucat:LiquidBiopsy;
-						rdfs:comment	"Connection between patient with lung cancer and the liquid biopsy tests that has been run.";
-						dcterms:modified "2017-10-04"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-p4-lucat:hasMutation	rdf:type        owl:ObjectProperty;	
-				rdfs:label	"hasMutation";
-						rdfs:domain	p4-lucat:LiquidBiopsy;
-						rdfs:range	p4-lucat:Mutation;
-						rdfs:comment	"Connection between liquid biopsy test and the mutation that has been observed.";
-						dcterms:modified "2017-10-04"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 p4-lucat:hasDate 	rdf:type owl:DatatypeProperty;	
 				rdfs:label	"hasDate";
@@ -1563,29 +1813,6 @@ p4-lucat:hasDate 	rdf:type owl:DatatypeProperty;
 				dcterms:modified "2021-03-18"^^xsd:date;
 				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-p4-lucat:hasPerformanceObservation	rdf:type        owl:ObjectProperty;	
-				rdfs:label	"hasPerformanceObservation";
-						rdfs:domain	p4-lucat:LCPatient;
-						rdfs:range	p4-lucat:PerformanceObservation;
-						rdfs:comment	"";
-						dcterms:modified "2019-01-30"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-p4-lucat:gender	rdf:type	owl:ObjectProperty;
-				rdfs:label	"gender";
-				rdfs:domain	p4-lucat:LCPatient;
-				rdfs:range	p4-lucat:Gender;
-				rdfs:comment	"Gender value of the patient.";
-				dcterms:modified "2018-01-14"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-p4-lucat:tumorType	rdf:type	owl:ObjectProperty;
-				rdfs:label	"tumorType";
-				rdfs:domain	p4-lucat:LCPatient;
-				rdfs:range	p4-lucat:TumorType;
-				rdfs:comment	"tumorType";
-				dcterms:modified "2019-01-30"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 p4-lucat:biomarkerLabel	rdf:type	owl:DatatypeProperty;
 				rdfs:label	"biomarkerLabel";
@@ -1692,22 +1919,6 @@ p4-lucat:drugGroupLabel_SPA  rdf:type owl:DatatypeProperty;
 					dcterms:modified "2018-11-26"^^xsd:date;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
-p4-lucat:hasTumorStage	rdf:type        owl:ObjectProperty;	
-				rdfs:label	"hasTumorStage";
-						rdfs:domain	p4-lucat:TumorObservation;
-						rdfs:range	p4-lucat:TumorStage;
-						rdfs:comment	".";
-						dcterms:modified "2018-11-27"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
-
-p4-lucat:hasTumorObservation	rdf:type        owl:ObjectProperty;	
-				rdfs:label	"hasTumorObservation";
-						rdfs:domain	p4-lucat:LCPatient;
-						rdfs:range	p4-lucat:TumorObservation;
-						rdfs:comment	".";
-						dcterms:modified "2019-01-30"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
 
 p4-lucat:tumorStageLabel      rdf:type     owl:DatatypeProperty;
 							rdfs:label	"tumorStageLabel";
@@ -1717,21 +1928,6 @@ p4-lucat:tumorStageLabel      rdf:type     owl:DatatypeProperty;
 							dcterms:modified "2018-11-27"^^xsd:date;
 							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
-p4-lucat:hasToxicityObservation	rdf:type        owl:ObjectProperty;	
-				rdfs:label	"hasToxicityObservation";
-						rdfs:domain	p4-lucat:LCPatient;
-						rdfs:range	p4-lucat:ToxicityObservation;
-						rdfs:comment ".";
-						dcterms:modified "2019-05-24"^^xsd:date;
-						dcterms:creator  <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
-
-p4-lucat:hasToxicity	rdf:type        owl:ObjectProperty;	
-				rdfs:label	"hasToxicity";
-						rdfs:domain	p4-lucat:ToxicityObservation;
-						rdfs:range	p4-lucat:Phenotype;
-						rdfs:comment	".";
-						dcterms:modified "2019-05-24"^^xsd:date;
-						dcterms:creator  <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 p4-lucat:toxicityLabel_ENG 	rdf:type        owl:DatatypeProperty;	
 				rdfs:label	"toxicityLabel_ENG";
@@ -1893,30 +2089,6 @@ p4-lucat:existenceOf_immunotherapy	rdf:type        owl:DatatypeProperty;
 						dcterms:modified "2020-07-21"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.																																																																																												
 
-p4-lucat:hasNonOncologicalDrug	rdf:type        owl:ObjectProperty;	
-				        rdfs:label	"hasNonOncologicalDrug";
-						rdfs:domain	p4-lucat:LCPatient;
-						rdfs:range	p4-lucat:Drug;
-						rdfs:comment "Relation between the patient and the non-oncological line of treamtment.";
-						dcterms:modified "2020-07-21"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
-
-p4-lucat:hasNonOncologicalDrugInFirstTreatmentLine	rdf:type        owl:ObjectProperty;	
-										        rdfs:label	"hasNonOncologicalDrugInFirstTreatmentLine";
-										        rdfs:subPropertyOf p4-lucat:hasNonOncologicalDrug;
-												rdfs:domain	p4-lucat:LCPatient;
-												rdfs:range	p4-lucat:Drug;
-												rdfs:comment "Relation between the patient and the non-oncological drug which is prescibed before/during the first oncological line of treamtment.";
-												dcterms:modified "2020-11-13"^^xsd:date;
-												dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
-
-p4-lucat:hasOncologicalTreatmentLine	rdf:type        owl:ObjectProperty;	
-				        rdfs:label	"hasOncologicalTreatmentLine";
-						rdfs:domain	p4-lucat:LCPatient;
-						rdfs:range	p4-lucat:OncologicalTreatmentLine;
-						rdfs:comment "Relation between the patient and the oncological line of treamtment.";
-						dcterms:modified "2020-07-21"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
 
 p4-lucat:existenceOf_cutaneaToxicity	rdf:type        owl:DatatypeProperty;	
 				        rdfs:label	"existenceOf_cutaneaToxicity";
@@ -2038,21 +2210,6 @@ p4-lucat:treatmentInitDate	rdf:type        owl:DatatypeProperty;
 						dcterms:modified "2021-03-18"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.																																																							
 
-p4-lucat:treatment_has_oncologicalDrug	rdf:type        owl:ObjectProperty;	
-				        rdfs:label	"treatment_has_oncologicalDrug";
-						rdfs:domain	p4-lucat:OncologicalTreatmentLine;
-						rdfs:range	p4-lucat:Drug;
-						rdfs:comment "Relation between the treatment line and the oncological drugs.";
-						dcterms:modified "2020-07-22"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.		
-
-p4-lucat:treatment_has_nonOncologicalDrug	rdf:type        owl:ObjectProperty;	
-				        rdfs:label	"treatmentInitDate";
-						rdfs:domain	p4-lucat:NonOncologicalTreatmentLine;
-						rdfs:range	p4-lucat:Drug;
-						rdfs:comment "Relation between the treatment line and the non-oncological drugs.";
-						dcterms:modified "2020-07-21"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.																																																								
 
 p4-lucat:oncologicalSurgeryLabel_ENG	rdf:type        owl:DatatypeProperty;	
 				        rdfs:label	"oncologicalSurgeryLabel_ENG";
@@ -2062,29 +2219,6 @@ p4-lucat:oncologicalSurgeryLabel_ENG	rdf:type        owl:DatatypeProperty;
 						dcterms:modified "2020-07-21"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
 
-p4-lucat:hasOncologicalSurgery	rdf:type        owl:ObjectProperty;	
-				        rdfs:label	"hasOncologicalSurgery";
-						rdfs:domain	p4-lucat:LCPatient;
-						rdfs:range	p4-lucat:OncologicalSurgery;
-						rdfs:comment "Relation between the patient and the surgey that has been performed on.";
-						dcterms:modified "2020-07-21"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.							
-
-p4-lucat:hasHospitalProcess	rdf:type        owl:ObjectProperty;	
-				        rdfs:label	"hasHospitalProcess";
-						rdfs:domain	p4-lucat:LCPatient;
-						rdfs:range	p4-lucat:HospitalProcess;
-						rdfs:comment "Relation between the patient to which the hospital process belongs and the hospital process.";
-						dcterms:modified "2020-07-21"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.																							
-
-p4-lucat:hasHospitalService	rdf:type        owl:ObjectProperty;	
-						        rdfs:label	"hasHospitalService";
-								rdfs:domain	p4-lucat:LCPatient;
-								rdfs:range	p4-lucat:HospitalService;
-								rdfs:comment "";
-								dcterms:modified "2020-12-21"^^xsd:date;
-								dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
 
 p4-lucat:hasDurationInHospital	rdf:type        owl:DatatypeProperty;	
 				        rdfs:label	"hasDurationInHospital";
@@ -2268,29 +2402,6 @@ p4-lucat:diagnosisLabel    rdf:type	owl:DatatypeProperty;
 							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 
-p4-lucat:hasImage       rdf:type     owl:ObjectProperty;
-							rdfs:label	"hasImage";
-							rdfs:domain	p4-lucat:LCPatient;
-							rdfs:range	p4-lucat:LCImage;
-							rdfs:comment ".";
-							dcterms:modified "2018-11-27"^^xsd:date;
-							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
-
-p4-lucat:imageType      rdf:type     owl:ObjectProperty;
-							rdfs:label	"imageType";
-							rdfs:domain	p4-lucat:LCImage;
-							rdfs:range	rdfs:Literal;
-							rdfs:comment ".";
-							dcterms:modified "2019-01-30"^^xsd:date;
-							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-p4-lucat:modality      rdf:type     owl:ObjectProperty;
-							rdfs:label	"modality";
-							rdfs:domain	p4-lucat:LCImage;
-							rdfs:range	p4-lucat:Modality;
-							rdfs:comment ".";
-							dcterms:modified "2018-11-27"^^xsd:date;
-							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 p4-lucat:manufacturer       rdf:type     owl:DatatypeProperty;
 							rdfs:label	"manufacturer";
@@ -2308,13 +2419,6 @@ p4-lucat:studyDescription       rdf:type     owl:DatatypeProperty;
 							dcterms:modified "2018-11-25"^^xsd:date;
 							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
-p4-lucat:bodyPartExamined      rdf:type     owl:ObjectProperty;
-							rdfs:label	"bodyPartExamined";
-							rdfs:domain	p4-lucat:LCImage;
-							rdfs:range	p4-lucat:BodyPartExamined;
-							rdfs:comment ".";
-							dcterms:modified "2018-11-25"^^xsd:date;
-							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 p4-lucat:sliceThickness       rdf:type     owl:DatatypeProperty;
 							rdfs:label	"sliceThickness";
@@ -2332,13 +2436,6 @@ p4-lucat:protocolName       rdf:type     owl:DatatypeProperty;
 							dcterms:modified "2018-11-25"^^xsd:date;
 							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
-p4-lucat:patientPosition      rdf:type     owl:ObjectProperty;
-							rdfs:label	"patientPosition";
-							rdfs:domain	p4-lucat:LCImage;
-							rdfs:range	p4-lucat:PatientPosition;
-							rdfs:comment ".";
-							dcterms:modified "2018-11-27"^^xsd:date;
-							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 p4-lucat:rows       rdf:type     owl:DatatypeProperty;
 							rdfs:label	"rows";
@@ -2420,13 +2517,6 @@ p4-lucat:huphm      rdf:type     owl:DatatypeProperty;
 							dcterms:modified "2018-11-25"^^xsd:date;
 							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
-p4-lucat:lungLaterality      rdf:type     owl:ObjectProperty;
-							rdfs:label	"lungLaterality";
-							rdfs:domain	p4-lucat:Organ;
-							rdfs:range	p4-lucat:LungLaterality;
-							rdfs:comment ".";
-							dcterms:modified "2018-11-27"^^xsd:date;
-							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 p4-lucat:lungLateralityLabel      rdf:type     owl:DatatypeProperty;
 							rdfs:label	"lungLateralityLabel";
@@ -2444,49 +2534,6 @@ p4-lucat:modalityLabel      rdf:type     owl:DatatypeProperty;
 							dcterms:modified "2018-11-25"^^xsd:date;
 							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
-
-p4-lucat:hasOrgans     rdf:type     owl:ObjectProperty;
-							rdfs:label	"hasOrgans";
-							rdfs:domain	p4-lucat:LCImage;
-							rdfs:range	p4-lucat:Organ;
-							rdfs:comment ".";
-							dcterms:modified "2018-11-27"^^xsd:date;
-							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
-
-p4-lucat:hasDiagnosis     rdf:type     owl:ObjectProperty;
-							rdfs:label	"hasDiagnosis";
-							rdfs:domain	p4-lucat:LCPatient;
-							rdfs:range	p4-lucat:Diagnosis;
-							rdfs:comment ".";
-							dcterms:modified "2018-11-27"^^xsd:date;
-							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
-
-p4-lucat:hasDiagnosis_imageBased     rdf:type     owl:ObjectProperty;
-							rdfs:label	"hasDiagnosis_imageBased";
-							rdfs:domain	p4-lucat:LCPatient;
-							rdfs:range	p4-lucat:Diagnosis;
-							rdfs:comment ".";
-							dcterms:modified "2019-01-30"^^xsd:date;
-							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-
-p4-lucat:hasDiagnosisTumorStage   rdf:type     owl:ObjectProperty;
-							rdfs:label	"hasDiagnosisTumorStage";
-							rdfs:domain	p4-lucat:Diagnosis;
-							rdfs:range	p4-lucat:TumorStage;
-							rdfs:comment ".";
-							dcterms:modified "2018-11-27"^^xsd:date;
-							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
-
-p4-lucat:hasDiagnosisTumorType   rdf:type     owl:ObjectProperty;
-							rdfs:label	"hasDiagnosisTumorType";
-							rdfs:domain	p4-lucat:Diagnosis;
-							rdfs:range	p4-lucat:TumorType;
-							rdfs:comment ".";
-							dcterms:modified "2019-05-23"^^xsd:date;
-							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
-
-
 p4-lucat:hasDiagnosisDate   rdf:type     owl:DatatypeProperty;
 							rdfs:label	"hasDiagnosisDate";
 							rdfs:domain	p4-lucat:Diagnosis;
@@ -2503,13 +2550,6 @@ p4-lucat:hasDiagnosisAge   rdf:type     owl:DatatypeProperty;
 							dcterms:modified "2018-11-27"^^xsd:date;
 							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
-p4-lucat:hasDiagnosisPerformanceStatus   rdf:type     owl:ObjectProperty;
-							rdfs:label	"hasDiagnosisPerformanceStatus";
-							rdfs:domain	p4-lucat:Diagnosis;
-							rdfs:range	p4-lucat:PerformanceStatus;
-							rdfs:comment ".";
-							dcterms:modified "2019-05-24"^^xsd:date;
-							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 p4-lucat:patientPositionLabel     rdf:type     owl:DatatypeProperty;
 							rdfs:label	"patientPositionLabel";
@@ -2612,13 +2652,6 @@ p4-lucat:nonOncologicalTreatmentList      rdf:type     owl:DatatypeProperty;
 							dcterms:modified "2018-11-27"^^xsd:date;
 							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
-p4-lucat:isBetweenPatients	rdf:type        owl:ObjectProperty;	
-				                rdfs:label	"isBetweenPatients";
-						rdfs:domain	p4-lucat:PatientSimilarity;
-						rdfs:range	p4-lucat:LCPatient;
-						rdfs:comment	".";
-						dcterms:modified "2018-11-27"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 p4-lucat:similarityValue     rdf:type     owl:DatatypeProperty;
 							rdfs:label	"similarityValue";
