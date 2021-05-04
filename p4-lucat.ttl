@@ -9,362 +9,360 @@
 ##########################################################################################
 ################################## Classes ###############################################
 ##########################################################################################
-p4-lucat:Assignment 	rdf:type 	owl:Class;
-                                      	rdfs:subClassOf p4-lucat:Concept;
-                                      	rdfs:comment "This class represents the assignment of a clinical trial"@en;
-                                      	rdfs:isDefinedBy "emetis_niazmand"@en;
-                                      	rdfs:label "Assignment"@en;
-                                      	owl:versionInfo "v1.0"@en.
+p4-lucat:Assignment 		rdf:type 	owl:Class;
+                                      		rdfs:subClassOf p4-lucat:Concept;
+                                      		rdfs:comment "This class represents the assignment of a clinical trial"@en;
+                                      		rdfs:isDefinedBy "emetis_niazmand"@en;
+						rdfs:label "Assignment"@en;
+						owl:versionInfo "v1.0"@en.
 
 p4-lucat:Assignment-Annotation 	rdf:type 	owl:Class ;
-                                   	rdfs:subClassOf p4-lucat:Concept;
-                                  	rdfs:comment "This class represents the assignment-Annotation of a clinical trial"@en;
-                                  	rdfs:isDefinedBy "emetis_niazmand"@en;
-                                   	rdfs:label "hasAssignment"@en;
-                                   	owl:versionInfo "v1.0"@en.
+						rdfs:subClassOf p4-lucat:Concept;
+						rdfs:comment "This class represents the assignment-Annotation of a clinical trial"@en;
+						rdfs:isDefinedBy "emetis_niazmand"@en;
+						rdfs:label "hasAssignment"@en;
+						owl:versionInfo "v1.0"@en.
 
-p4-lucat:Sex 	rdf:type 	owl:Class;
-                                    	rdfs:subClassOf p4-lucat:Concept;
-                                    	rdfs:comment "This class represents the gender included in a clinical trial"@en;
-                                    	rdfs:isDefinedBy "emetis_niazmand"@en;
-                                    	rdfs:label "Sex"@en;
-                                    	owl:versionInfo "v1.0"@en.
-
-
-
-p4-lucat:ClinicalTrial 	rdf:type 	owl:Class;
-                                        rdfs:subClassOf p4-lucat:Concept;
-                                        rdfs:comment "This class represents clinical trials conducted to study lung cancer drugs"@en;
-                                        rdfs:isDefinedBy "emetis_niazmand"@en;
-                                        rdfs:label "ClinicalTrial"@en;
-                                        owl:versionInfo "v1.0"@en.
+p4-lucat:Sex 			rdf:type 	owl:Class;
+						rdfs:subClassOf p4-lucat:Concept;
+						rdfs:comment "This class represents the gender included in a clinical trial"@en;
+						rdfs:isDefinedBy "emetis_niazmand"@en;
+						rdfs:label "Sex"@en;
+						owl:versionInfo "v1.0"@en.
 
 
-p4-lucat:Concept 	rdf:type 	owl:Class;
-                                   	rdfs:subClassOf owl:Thing;
-                                   	rdfs:comment "Constituents of thoughts or real world entities."@en;
-                                   	rdfs:isDefinedBy "emetis_niazmand"@en;
-                                   	rdfs:label "Concept"@en;
-                                   	owl:versionInfo "v1.0"@en.
+
+p4-lucat:ClinicalTrial 		rdf:type 	owl:Class;
+						rdfs:subClassOf p4-lucat:Concept;
+						rdfs:comment "This class represents clinical trials conducted to study lung cancer drugs"@en;
+						rdfs:isDefinedBy "emetis_niazmand"@en;
+						rdfs:label "ClinicalTrial"@en;
+						owl:versionInfo "v1.0"@en.
+
+
+p4-lucat:Concept 		rdf:type 	owl:Class;
+						rdfs:subClassOf owl:Thing;
+						rdfs:comment "Constituents of thoughts or real world entities."@en;
+						rdfs:isDefinedBy "emetis_niazmand"@en;
+						rdfs:label "Concept"@en;
+						owl:versionInfo "v1.0"@en.
 
 p4-lucat:Condition-Annotation 	rdf:type 	owl:Class ;
-                                   	rdfs:subClassOf p4-lucat:Concept;
-                                  	rdfs:comment "This class represents condition-Annotation"@en;
-                                  	rdfs:isDefinedBy "emetis_niazmand"@en;
-                                   	rdfs:label "hasCondition"@en;
-                                   	owl:versionInfo "v1.0"@en.
+						rdfs:subClassOf p4-lucat:Concept;
+						rdfs:comment "This class represents condition-Annotation"@en;
+						rdfs:isDefinedBy "emetis_niazmand"@en;
+						rdfs:label "hasCondition"@en;
+						owl:versionInfo "v1.0"@en.
 
-p4-lucat:Condition 	rdf:type 	owl:Class;
-                                     	rdfs:subClassOf p4-lucat:Disorder;
-                                     	rdfs:comment "This class represents conditions or diseases"@en;
-                                     	rdfs:isDefinedBy "emetis_niazmand"@en;
-                                     	rdfs:label "Condition"@en;
-                                     	owl:versionInfo "v1.0"@en.
-
-
-p4-lucat:Disorder 	rdf:type 	owl:Class;
-                                    	rdfs:subClassOf p4-lucat:Concept;
-                                    	rdfs:comment "This class represents disorders"@en;
-                                    	rdfs:isDefinedBy "emetis_niazmand"@en;
-                                    	rdfs:label "Disorder"@en;
-                                    	owl:versionInfo "v1.0"@en.
+p4-lucat:Condition 		rdf:type 	owl:Class;
+						rdfs:subClassOf p4-lucat:Disorder;
+						rdfs:comment "This class represents conditions or diseases"@en;
+						rdfs:isDefinedBy "emetis_niazmand"@en;
+						rdfs:label "Condition"@en;
+						owl:versionInfo "v1.0"@en.
 
 
-p4-lucat:Drug 		rdf:type 	owl:Class;
-                                	rdfs:subClassOf p4-lucat:Intervention;
-                                	rdfs:comment "This class represents drugs"@en;
-                                	rdfs:isDefinedBy "emetis_niazmand"@en;
-                                	rdfs:label "Drug"@en;
-                                	owl:versionInfo "v1.0"@en.
+p4-lucat:Disorder 		rdf:type 	owl:Class;
+						rdfs:subClassOf p4-lucat:Concept;
+						rdfs:comment "This class represents disorders"@en;
+						rdfs:isDefinedBy "emetis_niazmand"@en;
+						rdfs:label "Disorder"@en;
+						owl:versionInfo "v1.0"@en.
+
+
+p4-lucat:Drug 			rdf:type 	owl:Class;
+						rdfs:subClassOf p4-lucat:Intervention;
+						rdfs:comment "This class represents drugs"@en;
+						rdfs:isDefinedBy "emetis_niazmand"@en;
+						rdfs:label "Drug"@en;
+						owl:versionInfo "v1.0"@en.
 
 p4-lucat:Intervention-Annotation 	rdf:type 	owl:Class ;
-                                   	rdfs:subClassOf p4-lucat:Concept;
-                                  	rdfs:comment "This class represents intervention-Annotation of clinical trials (e.g., drugs, medical devices)"@en;
-                                  	rdfs:isDefinedBy "emetis_niazmand"@en;
-                                   	rdfs:label "hasIntervention"@en;
-                                   	owl:versionInfo "v1.0"@en.
+							rdfs:subClassOf p4-lucat:Concept;
+							rdfs:comment "This class represents intervention-Annotation of clinical trials (e.g., drugs, medical devices)"@en;
+							rdfs:isDefinedBy "emetis_niazmand"@en;
+							rdfs:label "hasIntervention"@en;
+							owl:versionInfo "v1.0"@en.
 
-p4-lucat:Intervention 	rdf:type 	owl:Class;
-                                        rdfs:subClassOf p4-lucat:Concept;
-                                        rdfs:comment "This class represents interventions of clinical trials (e.g., drugs, medical devices)"@en;
-                                        rdfs:isDefinedBy "emetis_niazmand"@en;
-                                        rdfs:label "Intervention"@en;
-                                        owl:versionInfo "v1.0"@en.
+p4-lucat:Intervention 		rdf:type 	owl:Class;
+						rdfs:subClassOf p4-lucat:Concept;
+						rdfs:comment "This class represents interventions of clinical trials (e.g., drugs, medical devices)"@en;
+						rdfs:isDefinedBy "emetis_niazmand"@en;
+						rdfs:label "Intervention"@en;
+						owl:versionInfo "v1.0"@en.
 
 
 p4-lucat:Keyword-Annotation 	rdf:type 	owl:Class ;
-                                   	rdfs:subClassOf p4-lucat:Concept;
-                                  	rdfs:comment "This class represents medical Keyword-Annotation"@en;
-                                  	rdfs:isDefinedBy "emetis_niazmand"@en;
-                                   	rdfs:label "hasKeyword"@en;
-                                   	owl:versionInfo "v1.0"@en.
+						rdfs:subClassOf p4-lucat:Concept;
+						rdfs:comment "This class represents medical Keyword-Annotation"@en;
+						rdfs:isDefinedBy "emetis_niazmand"@en;
+						rdfs:label "hasKeyword"@en;
+						owl:versionInfo "v1.0"@en.
 
 
-p4-lucat:Keyword 	rdf:type 	owl:Class ;
-                                   	rdfs:subClassOf p4-lucat:Concept;
-                                  	rdfs:comment "This class represents medical keywords"@en;
-                                  	rdfs:isDefinedBy "emetis_niazmand"@en;
-                                   	rdfs:label "Keyword"@en;
-                                   	owl:versionInfo "v1.0"@en.
+p4-lucat:Keyword 		rdf:type 	owl:Class ;
+						rdfs:subClassOf p4-lucat:Concept;
+						rdfs:comment "This class represents medical keywords"@en;
+						rdfs:isDefinedBy "emetis_niazmand"@en;
+						rdfs:label "Keyword"@en;
+						owl:versionInfo "v1.0"@en.
 
 
-p4-lucat:Publication 	rdf:type 	owl:Class;
-                                        rdfs:subClassOf p4-lucat:Concept;
-                                        rdfs:comment "This class represents scientific publications"@en;
-                                        rdfs:isDefinedBy "emetis_niazmand"@en;
-                                        rdfs:label "Publication"@en;
-                                        owl:versionInfo "v1.0"@en.
+p4-lucat:Publication 		rdf:type 	owl:Class;
+						rdfs:subClassOf p4-lucat:Concept;
+						rdfs:comment "This class represents scientific publications"@en;
+						rdfs:isDefinedBy "emetis_niazmand"@en;
+						rdfs:label "Publication"@en;
+						owl:versionInfo "v1.0"@en.
 
 
-p4-lucat:Annotation	rdf:type	owl:Class;
-					rdfs:label	"Annotation";
-					rdfs:comment "Explanation of a concept including label, id and source of concept.";
-					dcterms:description "e.g. CUI IDs provided by UMLS.";
-					dcterms:modified "2017-10-23"^^xsd:date;
-					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-esther-vidal>.
+p4-lucat:Annotation		rdf:type	owl:Class;
+						rdfs:label	"Annotation";
+						rdfs:comment "Explanation of a concept including label, id and source of concept.";
+						dcterms:description "e.g. CUI IDs provided by UMLS.";
+						dcterms:modified "2017-10-23"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-esther-vidal>.
 
-p4-lucat:Relation	rdf:type	owl:Class;
-					rdfs:label	"Relation";
-					rdfs:comment "Relations between concepts.";
-					dcterms:modified "2017-10-23"^^xsd:date;
-					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-esther-vidal>.
+p4-lucat:Relation		rdf:type	owl:Class;
+						rdfs:label	"Relation";
+						rdfs:comment "Relations between concepts.";
+						dcterms:modified "2017-10-23"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-esther-vidal>.
 
-p4-lucat:SourceName	rdf:type	owl:Class;
-					rdfs:label	"SourceName";
-					rdfs:comment "Source name.";
-					dcterms:modified "2017-10-23"^^xsd:date;
-					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+p4-lucat:SourceName		rdf:type	owl:Class;
+						rdfs:label	"SourceName";
+						rdfs:comment "Source name.";
+						dcterms:modified "2017-10-23"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-p4-lucat:Image rdf:type owl:Class;
-			rdfs:label	"MedicalImage";
-			rdfs:subClassOf	p4-lucat:Concept;
-			p4-lucat:partOf p4-lucat:ClinicalRecord;
-			rdfs:comment "Patient's medical images.";
-			dcterms:modified "2017-10-23"^^xsd:date;
-			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-esther-vidal>.
+p4-lucat:Image 			rdf:type 	owl:Class;
+						rdfs:label	"MedicalImage";
+						rdfs:subClassOf	p4-lucat:Concept;
+						p4-lucat:partOf p4-lucat:ClinicalRecord;
+						rdfs:comment "Patient's medical images.";
+						dcterms:modified "2017-10-23"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-esther-vidal>.
 
-p4-lucat:Test 	rdf:type owl:Class;
-			rdfs:label	"MedicalTest";
-			rdfs:subClassOf	p4-lucat:Concept;
-			p4-lucat:partOf p4-lucat:ClinicalRecord;
-			rdfs:comment "Medical procedure performed to detect, diagnose, or monitor diseases, disease processes, susceptibility, and determine a course of treatment.";
-			dcterms:modified "2017-10-23"^^xsd:date;
-			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-esther-vidal>.
+p4-lucat:Test 			rdf:type 	owl:Class;
+						rdfs:label	"MedicalTest";
+						rdfs:subClassOf	p4-lucat:Concept;
+						p4-lucat:partOf p4-lucat:ClinicalRecord;
+						rdfs:comment "Medical procedure performed to detect, diagnose, or monitor diseases, disease processes, susceptibility, and determine a course of treatment.";
+						dcterms:modified "2017-10-23"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-esther-vidal>.
 
-p4-lucat:Interaction	rdf:type owl:Class;
-			rdfs:label	"Interaction";
-			rdfs:subClassOf	p4-lucat:Concept;
-			rdfs:comment "Interaction between drugs and disorder, enzyme, target.";
-			dcterms:modified "2020-07-24"^^xsd:date;
-			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.			
+p4-lucat:Interaction		rdf:type 	owl:Class;
+						rdfs:label	"Interaction";
+						rdfs:subClassOf	p4-lucat:Concept;
+						rdfs:comment "Interaction between drugs and disorder, enzyme, target.";
+						dcterms:modified "2020-07-24"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.			
 
 #### WP4 requirements: 
 
+p4-lucat:Author			rdf:type	owl:Class;
+						rdfs:label	"Author";
+						rdfs:subClassOf	p4-lucat:Concept;
+						rdfs:comment "Author of Scientific publications.";
+						dcterms:modified "2019-05-24"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
-p4-lucat:Author	rdf:type	owl:Class;
-					rdfs:label	"Author";
-					rdfs:subClassOf	p4-lucat:Concept;
-					rdfs:comment "Author of Scientific publications.";
-					dcterms:modified "2019-05-24"^^xsd:date;
-					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+p4-lucat:MENTIONED_IN		rdf:type 	owl:Class;
+						rdfs:label	"MentionedIn";
+						rdfs:subClassOf p4-lucat:Relation;
+						rdfs:comment	"A relation that shows in which publication each specific CUI term has been appeared.";
+						dcterms:modified "2017-10-23"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-esther-vidal>.
 
-p4-lucat:MENTIONED_IN	rdf:type owl:Class;
-					rdfs:label	"MentionedIn";
-					rdfs:subClassOf p4-lucat:Relation;
-					rdfs:comment	"A relation that shows in which publication each specific CUI term has been appeared.";
-					dcterms:modified "2017-10-23"^^xsd:date;
-					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-esther-vidal>.
+p4-lucat:HAS_TOPIC		rdf:type 	owl:Class;
+						rdfs:label	"HasTopic";
+						rdfs:subClassOf p4-lucat:Relation;
+						rdfs:comment	"A relation that shows which CUI has been appeared in each specific publication.";
+						dcterms:modified "2017-10-23"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-p4-lucat:HAS_TOPIC	rdf:type owl:Class;
-				rdfs:label	"HasTopic";
-				rdfs:subClassOf p4-lucat:Relation;
-				rdfs:comment	"A relation that shows which CUI has been appeared in each specific publication.";
-				dcterms:modified "2017-10-23"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-p4-lucat:ASSOCIATED_WITH	rdf:type owl:Class;
+p4-lucat:ASSOCIATED_WITH	rdf:type 	owl:Class;
 						rdfs:label	"AssociatedWith";
 						rdfs:subClassOf p4-lucat:Relation;
 						rdfs:comment	"UMLS Annotation.";
 						dcterms:modified "2017-10-23"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-esther-vidal>.
 
-p4-lucat:CAUSES	rdf:type owl:Class;
-				rdfs:label	"Causes";
-				rdfs:subClassOf p4-lucat:Relation;
-				rdfs:comment	"UMLS Annotation.";
-				dcterms:modified "2017-10-23"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+p4-lucat:CAUSES			rdf:type 	owl:Class;
+						rdfs:label	"Causes";
+						rdfs:subClassOf p4-lucat:Relation;
+						rdfs:comment	"UMLS Annotation.";
+						dcterms:modified "2017-10-23"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-p4-lucat:INHIBITS	rdf:type owl:Class;
-				rdfs:label	"Inhibits";
-				rdfs:subClassOf p4-lucat:Relation;
-				rdfs:comment	"UMLS Annotation.";
-				dcterms:modified "2017-10-23"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+p4-lucat:INHIBITS		rdf:type 	owl:Class;
+						rdfs:label	"Inhibits";
+						rdfs:subClassOf p4-lucat:Relation;
+						rdfs:comment	"UMLS Annotation.";
+						dcterms:modified "2017-10-23"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-p4-lucat:INTERACTS_WITH rdf:type owl:Class;
-					rdfs:label	"InteractsWith";
-					rdfs:subClassOf p4-lucat:Relation;
-					rdfs:comment	"UMLS Annotation.";
-					dcterms:modified "2017-10-23"^^xsd:date;
-					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+p4-lucat:INTERACTS_WITH 	rdf:type 	owl:Class;
+						rdfs:label	"InteractsWith";
+						rdfs:subClassOf p4-lucat:Relation;
+						rdfs:comment	"UMLS Annotation.";
+						dcterms:modified "2017-10-23"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-p4-lucat:PREDISPOSES 	rdf:type owl:Class;
-					rdfs:label	"Predisposes";
-					rdfs:subClassOf p4-lucat:Relation;
-					rdfs:comment	"UMLS Annotation.";
-					dcterms:modified "2017-10-23"^^xsd:date;
-					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+p4-lucat:PREDISPOSES 		rdf:type 	owl:Class;
+						rdfs:label	"Predisposes";
+						rdfs:subClassOf p4-lucat:Relation;
+						rdfs:comment	"UMLS Annotation.";
+						dcterms:modified "2017-10-23"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-p4-lucat:STIMULATES 	rdf:type owl:Class;
-					rdfs:label	"Stimulates";
-					rdfs:subClassOf p4-lucat:Relation;
-					rdfs:comment	"UMLS Annotation.";
-					dcterms:modified "2017-10-23"^^xsd:date;
-					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+p4-lucat:STIMULATES 		rdf:type 	owl:Class;
+						rdfs:label	"Stimulates";
+						rdfs:subClassOf p4-lucat:Relation;
+						rdfs:comment	"UMLS Annotation.";
+						dcterms:modified "2017-10-23"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 
 #### Drug requirements:
 
-
-p4-lucat:LungCancerDrug	rdf:type owl:Class;
-			rdfs:label	"LungCancerDrug";
-			rdfs:subClassOf	p4-lucat:Drug;
-			rdfs:comment "Drugs that are prescibied for lung cancer.";
-			dcterms:modified "2020-07-24"^^xsd:date;
-			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-
-p4-lucat:Phenotype rdf:type	owl:Class;
-					rdfs:label	"Phenotype";
-					rdfs:subClassOf	p4-lucat:Concept;
-					rdfs:comment "The set of observable characteristics of an individual resulting from the interaction of its genotype with the environment. This class include side effects that result from different drugs.";
-					dcterms:modified "2019-01-30"^^xsd:date;
-					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+p4-lucat:LungCancerDrug		rdf:type 	owl:Class;
+						rdfs:label	"LungCancerDrug";
+						rdfs:subClassOf	p4-lucat:Drug;
+						rdfs:comment "Drugs that are prescibied for lung cancer.";
+						dcterms:modified "2020-07-24"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 
-p4-lucat:DrugSideEffect	rdf:type owl:Class;
+p4-lucat:Phenotype 		rdf:type	owl:Class;
+						rdfs:label	"Phenotype";
+						rdfs:subClassOf	p4-lucat:Concept;
+						rdfs:comment "The set of observable characteristics of an individual resulting from the interaction of its genotype with the environment. This class include side effects that result from different drugs.";
+						dcterms:modified "2019-01-30"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+
+p4-lucat:DrugSideEffect		rdf:type 	owl:Class;
 						rdfs:label	"DrugSideEffect";
 						rdfs:subClassOf	p4-lucat:Relation;
 						rdfs:comment "The Drug SideEffect relation should be a class since has two properties";
 						dcterms:modified "2017-07-24"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-p4-lucat:Enzyme	rdf:type owl:Class;
-				rdfs:label	"Enzyme";
-				rdfs:subClassOf	p4-lucat:Concept;
-				rdfs:comment "Macromolecular biological catalyst that accelerate chemical reactions. Most enzymes are proteins.";
-				dcterms:modified "2017-07-24"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+p4-lucat:Enzyme			rdf:type 	owl:Class;
+						rdfs:label	"Enzyme";
+						rdfs:subClassOf	p4-lucat:Concept;
+						rdfs:comment "Macromolecular biological catalyst that accelerate chemical reactions. Most enzymes are proteins.";
+						dcterms:modified "2017-07-24"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-p4-lucat:EffectInteraction	rdf:type owl:Class;
-				rdfs:label	"EffectInteraction";
-				rdfs:subClassOf	p4-lucat:Relation;
-				rdfs:comment "The relation between two drugs that interact.";
-				dcterms:modified "2018-10-23"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-
-p4-lucat:Target	rdf:type owl:Class;
-				rdfs:label	"Target";
-				rdfs:subClassOf	p4-lucat:Concept;
-				rdfs:comment "A drug target is a molecule in the body, usually a protein, that is intrinsically associated with a particular disease process and that could be addressed by a drug to produce a desired therapeutic effect.";
-				dcterms:modified "2018-10-30"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-p4-lucat:Protein	rdf:type owl:Class;
-				rdfs:label	"Protein";
-				rdfs:subClassOf	p4-lucat:Concept;
-				rdfs:comment "Represents large biomolecules, or macromolecules, consisting of one or more long chains of amino acid residues.";
-				dcterms:modified "2020-07-24"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-p4-lucat:PredictedDrugSideEffect	rdf:type owl:Class;
-						rdfs:label	"PredictedDrugSideEffect";
+p4-lucat:EffectInteraction	rdf:type 	owl:Class;
+						rdfs:label	"EffectInteraction";
 						rdfs:subClassOf	p4-lucat:Relation;
-						rdfs:comment "The predicted Drug SideEffect relation.";
-						dcterms:modified "2019-01-30"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
+						rdfs:comment "The relation between two drugs that interact.";
+						dcterms:modified "2018-10-23"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-p4-lucat:DrugDisorderInteraction	rdf:type owl:Class;
-						rdfs:label	"DrugDisorderInteraction";
-						rdfs:subClassOf	p4-lucat:Interaction;
-						rdfs:comment "Represents the relation between drugs and disorders.";
+
+p4-lucat:Target			rdf:type 	owl:Class;
+						rdfs:label	"Target";
+						rdfs:subClassOf	p4-lucat:Concept;
+						rdfs:comment "A drug target is a molecule in the body, usually a protein, that is intrinsically associated with a particular disease process and that could be addressed by a drug to produce a desired therapeutic effect.";
+						dcterms:modified "2018-10-30"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+p4-lucat:Protein		rdf:type 	owl:Class;
+						rdfs:label	"Protein";
+						rdfs:subClassOf	p4-lucat:Concept;
+						rdfs:comment "Represents large biomolecules, or macromolecules, consisting of one or more long chains of amino acid residues.";
 						dcterms:modified "2020-07-24"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.		
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-p4-lucat:DrugSideEffectInteraction	rdf:type owl:Class;
-						rdfs:label	"DrugSideEffectInteraction";
-						rdfs:subClassOf	p4-lucat:Interaction;
-						rdfs:comment "Represents side effects of drugs.";
-						dcterms:modified "2020-07-24"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.		
+p4-lucat:PredictedDrugSideEffect	rdf:type 	owl:Class;
+							rdfs:label	"PredictedDrugSideEffect";
+							rdfs:subClassOf	p4-lucat:Relation;
+							rdfs:comment "The predicted Drug SideEffect relation.";
+							dcterms:modified "2019-01-30"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
 
-p4-lucat:DrugTargetInteraction	rdf:type owl:Class;
-						rdfs:label	"DrugTargetInteraction";
-						rdfs:subClassOf	p4-lucat:Interaction;
-						rdfs:comment "Represents the relation between drugs and targets.";
-						dcterms:modified "2020-07-24"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.		
+p4-lucat:DrugDisorderInteraction	rdf:type 	owl:Class;
+							rdfs:label	"DrugDisorderInteraction";
+							rdfs:subClassOf	p4-lucat:Interaction;
+							rdfs:comment "Represents the relation between drugs and disorders.";
+							dcterms:modified "2020-07-24"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.		
 
-p4-lucat:DrugEnzymeInteraction	rdf:type owl:Class;
-						rdfs:label	"DrugEnzymeInteraction";
-						rdfs:subClassOf	p4-lucat:Interaction;
-						rdfs:comment "Represents the relation between drugs and enzymes.";
-						dcterms:modified "2020-07-24"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.		
+p4-lucat:DrugSideEffectInteraction	rdf:type 	owl:Class;
+							rdfs:label	"DrugSideEffectInteraction";
+							rdfs:subClassOf	p4-lucat:Interaction;
+							rdfs:comment "Represents side effects of drugs.";
+							dcterms:modified "2020-07-24"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.		
 
-p4-lucat:DrugDrugInteraction	rdf:type owl:Class;
-						rdfs:label	"DrugDrugInteraction";
-						rdfs:subClassOf	p4-lucat:Interaction;
-						rdfs:comment "Represents the relation between drugs.";
-						dcterms:modified "2020-07-24"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.		
+p4-lucat:DrugTargetInteraction		rdf:type 	owl:Class;
+							rdfs:label	"DrugTargetInteraction";
+							rdfs:subClassOf	p4-lucat:Interaction;
+							rdfs:comment "Represents the relation between drugs and targets.";
+							dcterms:modified "2020-07-24"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.		
 
-p4-lucat:SymmetricDrugDrugInteraction	rdf:type owl:Class;
-						rdfs:label	"SymmetricDrugDrugInteraction";
-						rdfs:subClassOf	p4-lucat:Interaction;
-						rdfs:comment "Represents the symmetric relation between drugs.";
-						dcterms:modified "2020-07-24"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
+p4-lucat:DrugEnzymeInteraction		rdf:type 	owl:Class;
+							rdfs:label	"DrugEnzymeInteraction";
+							rdfs:subClassOf	p4-lucat:Interaction;
+							rdfs:comment "Represents the relation between drugs and enzymes.";
+							dcterms:modified "2020-07-24"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.		
 
-p4-lucat:AdverseEvent	rdf:type owl:Class;
+p4-lucat:DrugDrugInteraction		rdf:type 	owl:Class;
+							rdfs:label	"DrugDrugInteraction";
+							rdfs:subClassOf	p4-lucat:Interaction;
+							rdfs:comment "Represents the relation between drugs.";
+							dcterms:modified "2020-07-24"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.		
+
+p4-lucat:SymmetricDrugDrugInteraction	rdf:type 	owl:Class;
+							rdfs:label	"SymmetricDrugDrugInteraction";
+							rdfs:subClassOf	p4-lucat:Interaction;
+							rdfs:comment "Represents the symmetric relation between drugs.";
+							dcterms:modified "2020-07-24"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
+
+p4-lucat:AdverseEvent		rdf:type 	owl:Class;
 						rdfs:label	"AdverseEvent";
 						rdfs:subClassOf	p4-lucat:Concept;
 						rdfs:comment "Represents the consequence of the interaction between two drugs.";
 						dcterms:modified "2020-07-24"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.																																					
 
-p4-lucat:DrugDrugPrediction	rdf:type owl:Class;
+p4-lucat:DrugDrugPrediction	rdf:type 	owl:Class;
 						rdfs:label	"DrugDrugPrediction";
 						rdfs:subClassOf	p4-lucat:Interaction;
 						rdfs:comment "Represents the predicted relation between drugs.";
 						dcterms:modified "2020-10-29"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-p4-lucat:DrugEnzymePrediction	rdf:type owl:Class;
-							rdfs:label	"DrugEnzymePrediction";
+p4-lucat:DrugEnzymePrediction	rdf:type 	owl:Class;
+						rdfs:label	"DrugEnzymePrediction";
+						rdfs:subClassOf	p4-lucat:Interaction;
+						rdfs:comment "Represents the predicted relation between drug and enzyme.";
+						dcterms:modified "2020-10-29"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+p4-lucat:DrugSideEffectPrediction	rdf:type 	owl:Class;
+							rdfs:label	"DrugSideEffectPrediction";
 							rdfs:subClassOf	p4-lucat:Interaction;
-							rdfs:comment "Represents the predicted relation between drug and enzyme.";
+							rdfs:comment "Represents the predicted relation between drug and side effects.";
 							dcterms:modified "2020-10-29"^^xsd:date;
 							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-p4-lucat:DrugSideEffectPrediction	rdf:type owl:Class;
-								rdfs:label	"DrugSideEffectPrediction";
-								rdfs:subClassOf	p4-lucat:Interaction;
-								rdfs:comment "Represents the predicted relation between drug and side effects.";
-								dcterms:modified "2020-10-29"^^xsd:date;
-								dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-p4-lucat:DrugTargetPrediction	rdf:type owl:Class;
+p4-lucat:DrugTargetPrediction		rdf:type 	owl:Class;
 							rdfs:label	"DrugTargetPrediction";
 							rdfs:subClassOf	p4-lucat:Interaction;
 							rdfs:comment "Represents the predicted relation between drug and target.";
 							dcterms:modified "2020-10-29"^^xsd:date;
 							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-p4-lucat:PublicationType	rdf:type owl:Class;
+p4-lucat:PublicationType	rdf:type 	owl:Class;
 						rdfs:label	"PublicationType";
 						rdfs:subClassOf	p4-lucat:Concept;
 						rdfs:comment "Represents the predicted relation between drug and target.";
@@ -374,53 +372,53 @@ p4-lucat:PublicationType	rdf:type owl:Class;
 #### WP2 requirements:
 #### clinical notes:
 
-p4-lucat:Observation    rdf:type        owl:Class;
-					rdfs:label	"p4-lucat:Observation";
-					rdfs:subClassOf	 p4-lucat:Concept;
-					rdfs:comment "Any record that relates to monitoring a process.";
-					dcterms:modified "2018-11-27"^^xsd:date;
-					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+p4-lucat:Observation    	rdf:type        owl:Class;
+						rdfs:label	"p4-lucat:Observation";
+						rdfs:subClassOf	 p4-lucat:Concept;
+						rdfs:comment "Any record that relates to monitoring a process.";
+						dcterms:modified "2018-11-27"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-p4-lucat:Patient rdf:type owl:Class;
-					rdfs:label	"Patient";
-					rdfs:subClassOf	p4-lucat:Concept;
-					rdfs:comment "A person who is receiving medical care.";
-					dcterms:modified "2018-07-24"^^xsd:date;
-					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+p4-lucat:Patient 		rdf:type 	owl:Class;
+						rdfs:label	"Patient";
+						rdfs:subClassOf	p4-lucat:Concept;
+						rdfs:comment "A person who is receiving medical care.";
+						dcterms:modified "2018-07-24"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-p4-lucat:LCPatient	rdf:type owl:Class;
-				rdfs:label	"LungCancerPatient";
-				rdfs:subClassOf	p4-lucat:Patient;
-				rdfs:comment "A patient who is diagnosed with Lung Cancer.";
-				dcterms:modified "2018-07-24"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+p4-lucat:LCPatient		rdf:type 	owl:Class;
+						rdfs:label	"LungCancerPatient";
+						rdfs:subClassOf	p4-lucat:Patient;
+						rdfs:comment "A patient who is diagnosed with Lung Cancer.";
+						dcterms:modified "2018-07-24"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 	
-p4-lucat:LiquidBiopsy 	rdf:type owl:Class;
-					rdfs:label	"LiquidBiopsy";
-					rdfs:subClassOf	p4-lucat:Test;
-					rdfs:comment	"A test done on a sample of blood to look for cancer cells from a tumor that are circulating in the blood or for pieces of DNA from tumor cells that are in the blood.";
-					dcterms:modified "2018-07-24"^^xsd:date;
-					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+p4-lucat:LiquidBiopsy 		rdf:type 	owl:Class;
+						rdfs:label	"LiquidBiopsy";
+						rdfs:subClassOf	p4-lucat:Test;
+						rdfs:comment	"A test done on a sample of blood to look for cancer cells from a tumor that are circulating in the blood or for pieces of DNA from tumor cells that are in the blood.";
+						dcterms:modified "2018-07-24"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-p4-lucat:TumorStage	rdf:type owl:Class;
-					rdfs:label	"TumorStage";
-					rdfs:comment "Represents the assessment of the stage of tumor in a particular date.";
-					dcterms:modified "2018-10-04"^^xsd:date;
-					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+p4-lucat:TumorStage		rdf:type 	owl:Class;
+						rdfs:label	"TumorStage";
+						rdfs:comment "Represents the assessment of the stage of tumor in a particular date.";
+						dcterms:modified "2018-10-04"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 p4-lucat:PerformanceStatus	rdf:type	owl:Class;
-			rdfs:label	"PerformanceStatus";
-			rdfs:comment "Patient's level of functioning in terms of her/his ability for caring her/himself, daily activities and phyical abilities.";
-			dcterms:modified "2018-09-27"^^xsd:date;
-			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+						rdfs:label	"PerformanceStatus";
+						rdfs:comment "Patient's level of functioning in terms of her/his ability for caring her/himself, daily activities and phyical abilities.";
+						dcterms:modified "2018-09-27"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 p4-lucat:FamiliarAntecedent	rdf:type	owl:Class;
-							rdfs:label	"FamiliarAntecedent";
-							rdfs:comment "Familiar antecedents of the patient.";
-							dcterms:modified "2018-09-27"^^xsd:date;
-							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+						rdfs:label	"FamiliarAntecedent";
+						rdfs:comment "Familiar antecedents of the patient.";
+						dcterms:modified "2018-09-27"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-p4-lucat:DrugGroup	rdf:type	owl:Class;
+p4-lucat:DrugGroup		rdf:type	owl:Class;
 						rdfs:subClassOf p4-lucat:Concept;
 						rdfs:label	"DrugGroup";
 						rdfs:comment "The type of drugs that has been prescribed to the patient.";
@@ -428,42 +426,42 @@ p4-lucat:DrugGroup	rdf:type	owl:Class;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 
-p4-lucat:TumorType	rdf:type	owl:Class;
+p4-lucat:TumorType		rdf:type	owl:Class;
 						rdfs:subClassOf p4-lucat:Concept;
 						rdfs:label	"TumorType";
 						rdfs:comment "The histology kind of the lung cancer. The type of tumor.";
 						dcterms:modified "2018-10-04"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-p4-lucat:Biomarker	 rdf:type	owl:Class;
-					rdfs:label	"Biomarker";
-					rdfs:subClassOf	p4-lucat:Concept;
-					rdfs:comment "A biomarker, or biological marker is a measurable indicator of some biological state or condition.";
-					dcterms:modified "2018-11-22"^^xsd:date;
-					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+p4-lucat:Biomarker	 	rdf:type	owl:Class;
+						rdfs:label	"Biomarker";
+						rdfs:subClassOf	p4-lucat:Concept;
+						rdfs:comment "A biomarker, or biological marker is a measurable indicator of some biological state or condition.";
+						dcterms:modified "2018-11-22"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 p4-lucat:PerformanceObservation   rdf:type      owl:Class;
-					rdfs:label	"p4-lucat:PerformanceObservation";
-					rdfs:subClassOf	p4-lucat:Observation;
-					rdfs:comment "";
-					dcterms:modified "2018-11-27"^^xsd:date;
-					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+						rdfs:label	"p4-lucat:PerformanceObservation";
+						rdfs:subClassOf	p4-lucat:Observation;
+						rdfs:comment "";
+						dcterms:modified "2018-11-27"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
-p4-lucat:TumorObservation    rdf:type        owl:Class;
-					rdfs:label	"p4-lucat:TumorObservation";
-					rdfs:subClassOf	 p4-lucat:Observation;
-					rdfs:comment "";
-					dcterms:modified "2018-11-27"^^xsd:date;
-					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+p4-lucat:TumorObservation    	rdf:type        owl:Class;
+						rdfs:label	"p4-lucat:TumorObservation";
+						rdfs:subClassOf	 p4-lucat:Observation;
+						rdfs:comment "";
+						dcterms:modified "2018-11-27"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 p4-lucat:ToxicityObservation    rdf:type        owl:Class;
-					rdfs:label	"p4-lucat:ToxicityObservation";
-					rdfs:subClassOf	 p4-lucat:Observation;
-					rdfs:comment "";
-					dcterms:modified "2019-05-24"^^xsd:date;
-					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+						rdfs:label	"p4-lucat:ToxicityObservation";
+						rdfs:subClassOf	 p4-lucat:Observation;
+						rdfs:comment "";
+						dcterms:modified "2019-05-24"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
-p4-lucat:TreatmentLine	rdf:type	owl:Class;
+p4-lucat:TreatmentLine		rdf:type	owl:Class;
 						rdfs:subClassOf p4-lucat:Concept;
 						rdfs:label	"TreatmentLine";
 						rdfs:comment "Represents any type of treatment line observations.";
@@ -471,48 +469,48 @@ p4-lucat:TreatmentLine	rdf:type	owl:Class;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 p4-lucat:OncologicalTreatmentLine	rdf:type	owl:Class;
-						rdfs:subClassOf p4-lucat:TreatmentLine;
-						rdfs:label	"OncologicalTreatmentLine";
-						rdfs:comment "Represents oncological treatment line observations.";
-						dcterms:modified "2020-07-21"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.		
+							rdfs:subClassOf p4-lucat:TreatmentLine;
+							rdfs:label	"OncologicalTreatmentLine";
+							rdfs:comment "Represents oncological treatment line observations.";
+							dcterms:modified "2020-07-21"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.		
 
 p4-lucat:NonOncologicalTreatmentLine	rdf:type	owl:Class;
-						rdfs:subClassOf p4-lucat:TreatmentLine;
-						rdfs:label	"NonOncologicalTreatmentLine";
-						rdfs:comment "Represents non-oncological treatment line observations.";
-						dcterms:modified "2020-07-21"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.		
+							rdfs:subClassOf p4-lucat:TreatmentLine;
+							rdfs:label	"NonOncologicalTreatmentLine";
+							rdfs:comment "Represents non-oncological treatment line observations.";
+							dcterms:modified "2020-07-21"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.		
 
-p4-lucat:OncologicalSurgery	rdf:type	owl:Class;
-						rdfs:subClassOf p4-lucat:Concept;
-						rdfs:label	"OncologicalSurgery";
-						rdfs:comment "Represents oncological surgery value.";
-						dcterms:modified "2020-07-21"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.		
+p4-lucat:OncologicalSurgery		rdf:type	owl:Class;
+							rdfs:subClassOf p4-lucat:Concept;
+							rdfs:label	"OncologicalSurgery";
+							rdfs:comment "Represents oncological surgery value.";
+							dcterms:modified "2020-07-21"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.		
 
-p4-lucat:HospitalProcess	rdf:type	owl:Class;
-						rdfs:subClassOf p4-lucat:Concept;
-						rdfs:label	"HospitalProcess";
-						rdfs:comment "Represents the reason of the hospoital service that is provided to the patient. It is identified by the ID of the document from where the service reason is extracted.";
-						dcterms:modified "2020-07-21"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
+p4-lucat:HospitalProcess		rdf:type	owl:Class;
+							rdfs:subClassOf p4-lucat:Concept;
+							rdfs:label	"HospitalProcess";
+							rdfs:comment "Represents the reason of the hospoital service that is provided to the patient. It is identified by the ID of the document from where the service reason is extracted.";
+							dcterms:modified "2020-07-21"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
 
-p4-lucat:HospitalService	rdf:type	owl:Class;
-						rdfs:subClassOf p4-lucat:Concept;
-						rdfs:label	"HospitalService";
-						rdfs:comment "Represents the hospital service that is provided.";
-						dcterms:modified "2020-07-21"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.																											
+p4-lucat:HospitalService		rdf:type	owl:Class;
+							rdfs:subClassOf p4-lucat:Concept;
+							rdfs:label	"HospitalService";
+							rdfs:comment "Represents the hospital service that is provided.";
+							dcterms:modified "2020-07-21"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.																											
 
-p4-lucat:ServiceBeforeDiagnosis	rdf:type	owl:Class;
+p4-lucat:ServiceBeforeDiagnosis		rdf:type	owl:Class;
 							rdfs:subClassOf p4-lucat:HospitalService;
 							rdfs:label	"ServiceBeforeDiagnosis";
 							rdfs:comment "";
 							dcterms:modified "2021-02-05"^^xsd:date;
 							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.																											
 
-p4-lucat:ServiceAfterDiagnosis	rdf:type	owl:Class;
+p4-lucat:ServiceAfterDiagnosis		rdf:type	owl:Class;
 							rdfs:subClassOf p4-lucat:HospitalService;
 							rdfs:label	"ServiceAfterDiagnosis";
 							rdfs:comment "";
@@ -520,135 +518,135 @@ p4-lucat:ServiceAfterDiagnosis	rdf:type	owl:Class;
 							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.																											
 
 p4-lucat:ServiceAfterDiagnosisBeforeOncologicalTreatment	rdf:type	owl:Class;
-														rdfs:subClassOf p4-lucat:HospitalService;
-														rdfs:label	"ServiceAfterDiagnosisBeforeOncologicalTreatment";
-														rdfs:comment "";
-														dcterms:modified "2021-02-05"^^xsd:date;
-														dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.																											
+										rdfs:subClassOf p4-lucat:HospitalService;
+										rdfs:label	"ServiceAfterDiagnosisBeforeOncologicalTreatment";
+										rdfs:comment "";
+										dcterms:modified "2021-02-05"^^xsd:date;
+										dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.																											
 
 p4-lucat:ServiceDuringOncologicalTreatment	rdf:type	owl:Class;
-										rdfs:subClassOf p4-lucat:HospitalService;
-										rdfs:label	"ServiceDuringOncologicalTreatment";
-										rdfs:comment "";
-										dcterms:modified "2021-02-05"^^xsd:date;
-										dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.																											
+								rdfs:subClassOf p4-lucat:HospitalService;
+								rdfs:label	"ServiceDuringOncologicalTreatment";
+								rdfs:comment "";
+								dcterms:modified "2021-02-05"^^xsd:date;
+								dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.																											
 
 p4-lucat:ServiceAfterOncologicalTreatment	rdf:type	owl:Class;
-										rdfs:subClassOf p4-lucat:HospitalService;
-										rdfs:label	"ServiceAfterOncologicalTreatment";
-										rdfs:comment "";
-										dcterms:modified "2021-02-05"^^xsd:date;
-										dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.																											
+								rdfs:subClassOf p4-lucat:HospitalService;
+								rdfs:label	"ServiceAfterOncologicalTreatment";
+								rdfs:comment "";
+								dcterms:modified "2021-02-05"^^xsd:date;
+								dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.																											
 
-p4-lucat:ScopeOfService	rdf:type	owl:Class;
-					rdfs:subClassOf p4-lucat:Concept;
-					rdfs:label	"ScopeOfService";
-					rdfs:comment "";
-					dcterms:modified "2021-02-05"^^xsd:date;
-					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.																											
+p4-lucat:ScopeOfService		rdf:type	owl:Class;
+						rdfs:subClassOf p4-lucat:Concept;
+						rdfs:label	"ScopeOfService";
+						rdfs:comment "";
+						dcterms:modified "2021-02-05"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.																											
 
-p4-lucat:TypeOfService	rdf:type	owl:Class;
-					rdfs:subClassOf p4-lucat:Concept;
-					rdfs:label	"TypeOfService";
-					rdfs:comment "";
-					dcterms:modified "2021-02-05"^^xsd:date;
-					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.																											
+p4-lucat:TypeOfService		rdf:type	owl:Class;
+						rdfs:subClassOf p4-lucat:Concept;
+						rdfs:label	"TypeOfService";
+						rdfs:comment "";
+						dcterms:modified "2021-02-05"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.																											
 
 p4-lucat:ServiceDepartment	rdf:type	owl:Class;
-					rdfs:subClassOf p4-lucat:Concept;
-					rdfs:label	"ServiceDepartment";
-					rdfs:comment "";
-					dcterms:modified "2021-02-05"^^xsd:date;
-					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.																											
+						rdfs:subClassOf p4-lucat:Concept;
+						rdfs:label	"ServiceDepartment";
+						rdfs:comment "";
+						dcterms:modified "2021-02-05"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.																											
 
-p4-lucat:ProcessComment	rdf:type	owl:Class;
-					rdfs:subClassOf p4-lucat:Concept;
-					rdfs:label	"ProcessComment";
-					rdfs:comment "";
-					dcterms:modified "2021-02-05"^^xsd:date;
-					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.																											
+p4-lucat:ProcessComment		rdf:type	owl:Class;
+						rdfs:subClassOf p4-lucat:Concept;
+						rdfs:label	"ProcessComment";
+						rdfs:comment "";
+						dcterms:modified "2021-02-05"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.																											
 
-p4-lucat:ProcessStatus	rdf:type	owl:Class;
-					rdfs:subClassOf p4-lucat:Concept;
-					rdfs:label	"ProcessStatus";
-					rdfs:comment "";
-					dcterms:modified "2021-02-05"^^xsd:date;
-					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.																											
+p4-lucat:ProcessStatus		rdf:type	owl:Class;
+						rdfs:subClassOf p4-lucat:Concept;
+						rdfs:label	"ProcessStatus";
+						rdfs:comment "";
+						dcterms:modified "2021-02-05"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.																											
 
-p4-lucat:ClinicalStatus	rdf:type	owl:Class;
-					rdfs:subClassOf p4-lucat:Concept;
-					rdfs:label	"ClinicalStatus";
-					rdfs:comment "";
-					dcterms:modified "2021-02-05"^^xsd:date;
-					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.																											
+p4-lucat:ClinicalStatus		rdf:type	owl:Class;
+						rdfs:subClassOf p4-lucat:Concept;
+						rdfs:label	"ClinicalStatus";
+						rdfs:comment "";
+						dcterms:modified "2021-02-05"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.																											
 
 p4-lucat:DiagnosisDescription	rdf:type	owl:Class;
-							rdfs:subClassOf p4-lucat:Concept;
-							rdfs:label	"DiagnosisDescription";
-							rdfs:comment "";
-							dcterms:modified "2021-02-05"^^xsd:date;
-							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.																											
+						rdfs:subClassOf p4-lucat:Concept;
+						rdfs:label	"DiagnosisDescription";
+						rdfs:comment "";
+						dcterms:modified "2021-02-05"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.																											
 
 
 #### clinical images:
 
-p4-lucat:Diagnosis  	rdf:type owl:Class;
-					rdfs:label	"Diagnosis";
-					rdfs:subClassOf	p4-lucat:Concept;
-					rdfs:comment "The identification of the nature of an illness or other problem by examination of the symptoms.";
-					dcterms:modified "2018-11-26"^^xsd:date;
-					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>. 
+p4-lucat:Diagnosis  		rdf:type 	owl:Class;
+						rdfs:label	"Diagnosis";
+						rdfs:subClassOf	p4-lucat:Concept;
+						rdfs:comment "The identification of the nature of an illness or other problem by examination of the symptoms.";
+						dcterms:modified "2018-11-26"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>. 
 
-p4-lucat:LCImage   	rdf:type owl:Class;
-					rdfs:label	"LCImage";
-					rdfs:subClassOf	p4-lucat:Concept;
-					rdfs:comment "Image of patient with Lung Cancer";
-					dcterms:modified "2018-11-25"^^xsd:date;
-					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.  
+p4-lucat:LCImage   		rdf:type 	owl:Class;
+						rdfs:label	"LCImage";
+						rdfs:subClassOf	p4-lucat:Concept;
+						rdfs:comment "Image of patient with Lung Cancer";
+						dcterms:modified "2018-11-25"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.  
 
-p4-lucat:LungLaterality   	rdf:type owl:Class;
+p4-lucat:LungLaterality   	rdf:type 	owl:Class;
 						rdfs:label	"LungLaterality";
 						rdfs:subClassOf	p4-lucat:Concept;
 						rdfs:comment "The laterality of lung to which the image refers.";
 						dcterms:modified "2018-11-26"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
-p4-lucat:Modality   	rdf:type owl:Class;
-					rdfs:label	"Modality";
-					rdfs:subClassOf	p4-lucat:Concept;
-					rdfs:comment "Modality of image";
-					dcterms:modified "2018-11-26"^^xsd:date;
-					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+p4-lucat:Modality   		rdf:type 	owl:Class;
+						rdfs:label	"Modality";
+						rdfs:subClassOf	p4-lucat:Concept;
+						rdfs:comment "Modality of image";
+						dcterms:modified "2018-11-26"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
-p4-lucat:Organ     	rdf:type owl:Class;
-					rdfs:label	"Organ";
-					rdfs:subClassOf	p4-lucat:Concept;
-					rdfs:comment "The organ which the image belong to.";
-					dcterms:modified "2018-11-26"^^xsd:date;
-					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+p4-lucat:Organ     		rdf:type 	owl:Class;
+						rdfs:label	"Organ";
+						rdfs:subClassOf	p4-lucat:Concept;
+						rdfs:comment "The organ which the image belong to.";
+						dcterms:modified "2018-11-26"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
-p4-lucat:PatientPosition   rdf:type owl:Class;
+p4-lucat:PatientPosition   	rdf:type 	owl:Class;
 						rdfs:label	"PatientPosition";
 						rdfs:subClassOf	p4-lucat:Concept;
 						rdfs:comment "Patient position";
 						dcterms:modified "2018-11-26"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
-p4-lucat:BodyPartExamined rdf:type         owl:Class;
-					rdfs:label	"BodyPartExamined";
-					rdfs:subClassOf	p4-lucat:Concept;
-					rdfs:comment "";
-					dcterms:modified "2018-11-25"^^xsd:date;
-					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+p4-lucat:BodyPartExamined 	rdf:type        owl:Class;
+						rdfs:label	"BodyPartExamined";
+						rdfs:subClassOf	p4-lucat:Concept;
+						rdfs:comment "";
+						dcterms:modified "2018-11-25"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 ####### lc_similarity:
 
-p4-lucat:PatientSimilarity   rdf:type owl:Class;
-			rdfs:label	"PatientSimilarity";
-			rdfs:subClassOf	p4-lucat:Concept;
-			rdfs:comment "";
-			dcterms:modified "2018-11-27"^^xsd:date;
-			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+p4-lucat:PatientSimilarity   	rdf:type 	owl:Class;
+						rdfs:label	"PatientSimilarity";
+						rdfs:subClassOf	p4-lucat:Concept;
+						rdfs:comment "";
+						dcterms:modified "2018-11-27"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 ##################################################################################################
 ################################### Properties ###################################################
