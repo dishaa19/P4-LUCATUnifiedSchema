@@ -23,7 +23,7 @@ p4-lucat:Assignment-Annotation 	rdf:type 	owl:Class ;
 						rdfs:label "hasAssignment"@en;
 						owl:versionInfo "v1.0"@en.
 
-p4-lucat:Sex 			rdf:type 	owl:Class;
+p4-lucat:Gender		 	rdf:type 	owl:Class;
 						rdfs:subClassOf p4-lucat:Concept;
 						rdfs:comment "This class represents the gender included in a clinical trial"@en;
 						rdfs:isDefinedBy "emetis_niazmand"@en;
