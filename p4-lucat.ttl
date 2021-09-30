@@ -51,14 +51,28 @@ p4-lucat:Condition-Annotation 	rdf:type 	owl:Class ;
 						rdfs:subClassOf p4-lucat:Concept;
 						rdfs:comment "This class represents condition-Annotation"@en;
 						rdfs:isDefinedBy "emetis_niazmand"@en;
-						rdfs:label "hasCondition"@en;
+						rdfs:label "annConditionLabel"@en;
 						owl:versionInfo "v1.0"@en.
 
 p4-lucat:Condition 		rdf:type 	owl:Class;
 						rdfs:subClassOf p4-lucat:Disorder;
 						rdfs:comment "This class represents conditions or diseases"@en;
 						rdfs:isDefinedBy "emetis_niazmand"@en;
-						rdfs:label "Condition"@en;
+						rdfs:label "hasCondition"@en;
+						owl:versionInfo "v1.0"@en.
+
+p4-lucat:Intervention-Annotation 	rdf:type 	owl:Class ;
+						rdfs:subClassOf p4-lucat:Concept;
+						rdfs:comment "This class represents intervention-Annotation"@en;
+						rdfs:isDefinedBy "emetis_niazmand"@en;
+						rdfs:label "annInterventionLabel"@en;
+						owl:versionInfo "v1.0"@en.
+
+p4-lucat:Intervention 		rdf:type 	owl:Class;
+						rdfs:subClassOf p4-lucat:Disorder;
+						rdfs:comment "This class represents interventions"@en;
+						rdfs:isDefinedBy "emetis_niazmand"@en;
+						rdfs:label "hasIntervention"@en;
 						owl:versionInfo "v1.0"@en.
 
 
