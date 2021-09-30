@@ -727,7 +727,7 @@ p4-lucat:DesignInterventionModel  rdf:type 	owl:ObjectProperty;
 p4-lucat:GenderInCT  		rdf:type 	owl:ObjectProperty;
 					      	rdfs:subPropertyOf owl:topObjectProperty;
 					      	rdfs:domain p4-lucat:ClinicalTrial;
-					      	rdfs:range p4-lucat:Sex;
+					      	rdfs:range p4-lucat:Gender;
 					      	rdfs:comment "This property shows association of clinical trials to gender."@en;
 					      	rdfs:isDefinedBy "emetis_niazmand"@en;
 					      	rdfs:label "GenderInCT"@en;
@@ -763,6 +763,93 @@ p4-lucat:PubOfCT  		rdf:type 	owl:ObjectProperty;
 					   	rdfs:label "PubOfCT"@en;
 					   	owl:versionInfo "v1.0"@en.
 
+p4-lucat:Egfr  			rdf:type 	owl:ObjectProperty;
+					   	rdfs:domain p4-lucat:ClinicalTrial;
+					   	rdfs:range p4-lucat:EGFR;
+					   	rdfs:comment "This property shows association of biomarker egfr to clinical trials."@en;
+					   	rdfs:isDefinedBy "emetis_niazmand"@en;
+					   	rdfs:label "Egfr"@en;
+					   	owl:versionInfo "v1.0"@en.
+
+p4-lucat:Alk  			rdf:type 	owl:ObjectProperty;
+					   	rdfs:domain p4-lucat:ClinicalTrial;
+					   	rdfs:range p4-lucat:ALK;
+					   	rdfs:comment "This property shows association of biomarker alk to clinical trials."@en;
+					   	rdfs:isDefinedBy "emetis_niazmand"@en;
+					   	rdfs:label "alk"@en;
+					   	owl:versionInfo "v1.0"@en.
+
+p4-lucat:Ros1  			rdf:type 	owl:ObjectProperty;
+					   	rdfs:domain p4-lucat:ClinicalTrial;
+					   	rdfs:range p4-lucat:ROS;
+					   	rdfs:comment "This property shows association of biomarker ros1 to clinical trials."@en;
+					   	rdfs:isDefinedBy "emetis_niazmand"@en;
+					   	rdfs:label "ros1"@en;
+					   	owl:versionInfo "v1.0"@en.
+
+p4-lucat:Radiotherapy  		rdf:type 	owl:ObjectProperty;
+					   	rdfs:domain p4-lucat:ClinicalTrial;
+					   	rdfs:range p4-lucat:Radiotherapy;
+					   	rdfs:comment "This property shows association of Radiotherapy to clinical trials."@en;
+					   	rdfs:isDefinedBy "emetis_niazmand"@en;
+					   	rdfs:label "Radiotherapy"@en;
+					   	owl:versionInfo "v1.0"@en.
+
+p4-lucat:Tki  			rdf:type 	owl:ObjectProperty;
+					   	rdfs:domain p4-lucat:ClinicalTrial;
+					   	rdfs:range p4-lucat:TKI;
+					   	rdfs:comment "This property shows association of tki to clinical trials."@en;
+					   	rdfs:isDefinedBy "emetis_niazmand"@en;
+					   	rdfs:label "tki"@en;
+					   	owl:versionInfo "v1.0"@en.
+
+p4-lucat:Chemotherapy  		rdf:type 	owl:ObjectProperty;
+					   	rdfs:domain p4-lucat:ClinicalTrial;
+					   	rdfs:range p4-lucat:Chemotherapy;
+					   	rdfs:comment "This property shows association of Chemotherapy to clinical trials."@en;
+					   	rdfs:isDefinedBy "emetis_niazmand"@en;
+					   	rdfs:label "Chemotherapy"@en;
+					   	owl:versionInfo "v1.0"@en.
+
+p4-lucat:Immunotherapy  	rdf:type 	owl:ObjectProperty;
+					   	rdfs:domain p4-lucat:ClinicalTrial;
+					   	rdfs:range p4-lucat:Immunotherapy;
+					   	rdfs:comment "This property shows association of Immunotherapy to clinical trials."@en;
+					   	rdfs:isDefinedBy "emetis_niazmand"@en;
+					   	rdfs:label "Immunotherapy"@en;
+					   	owl:versionInfo "v1.0"@en.
+
+p4-lucat:Surgery  		rdf:type 	owl:ObjectProperty;
+					   	rdfs:domain p4-lucat:ClinicalTrial;
+					   	rdfs:range p4-lucat:Surgery;
+					   	rdfs:comment "This property shows association of Surgery to clinical trials."@en;
+					   	rdfs:isDefinedBy "emetis_niazmand"@en;
+					   	rdfs:label "Surgery"@en;
+					   	owl:versionInfo "v1.0"@en.
+
+p4-lucat:Antiangiogenic  	rdf:type 	owl:ObjectProperty;
+					   	rdfs:domain p4-lucat:ClinicalTrial;
+					   	rdfs:range p4-lucat:Antiangiogenic;
+					   	rdfs:comment "This property shows association of Antiangiogenic to clinical trials."@en;
+					   	rdfs:isDefinedBy "emetis_niazmand"@en;
+					   	rdfs:label "Antiangiogenic"@en;
+					   	owl:versionInfo "v1.0"@en.
+
+p4-lucat:Stages  		rdf:type 	owl:ObjectProperty;
+					   	rdfs:domain p4-lucat:ClinicalTrial;
+					   	rdfs:range p4-lucat:Stages;
+					   	rdfs:comment "This property shows association of Stages to clinical trials."@en;
+					   	rdfs:isDefinedBy "emetis_niazmand"@en;
+					   	rdfs:label "Stages"@en;
+					   	owl:versionInfo "v1.0"@en.
+
+p4-lucat:PerformanceObservation  	rdf:type 	owl:ObjectProperty;
+					   	rdfs:domain p4-lucat:ClinicalTrial;
+					   	rdfs:range p4-lucat:PerformanceObservation;
+					   	rdfs:comment "This property shows association of PerformanceObservation to clinical trials."@en;
+					   	rdfs:isDefinedBy "emetis_niazmand"@en;
+					   	rdfs:label "PerformanceObservation"@en;
+					   	owl:versionInfo "v1.0"@en.
 #### WP4 requirements:
 
 p4-lucat:provenance		rdf:type	owl:ObjectProperty;
