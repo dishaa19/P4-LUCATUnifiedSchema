@@ -593,6 +593,12 @@ p4-lucat:DiagnosisDescription	rdf:type	owl:Class;
 						dcterms:modified "2021-02-05"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.																											
 
+p4-lucat:ToxicityType	rdf:type	owl:Class;
+						rdfs:subClassOf p4-lucat:Concept;
+						rdfs:label	"ToxicityType";
+						rdfs:comment "";
+						dcterms:modified "2021-10-12"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.																											
 
 #### clinical images:
 
@@ -1153,6 +1159,14 @@ p4-lucat:hasChemotherapy	rdf:type        owl:ObjectProperty;
 						rdfs:range	p4-lucat:Drug;
 						rdfs:comment	"Connection between patient with lung cancer and the Chemotherapy drugs that has been prescribed.";
 						dcterms:modified "2018-11-27"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+p4-lucat:hasAntiangiogenic	rdf:type        owl:ObjectProperty;	
+				rdfs:label	"hasAntiangiogenic";
+						rdfs:domain	p4-lucat:LCPatient;
+						rdfs:range	p4-lucat:Drug;
+						rdfs:comment	"";
+						dcterms:modified "2021-10-12"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 p4-lucat:hasLiquidBiopsy	rdf:type        owl:ObjectProperty;	
@@ -1824,12 +1838,12 @@ p4-lucat:impact	rdf:type	owl:DatatypeProperty;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.			
 
 
-p4-lucat:toxicityType	rdf:type	owl:DatatypeProperty;
+p4-lucat:hasToxicityType	rdf:type	owl:ObjectProperty;
 							rdfs:label	"toxicityType";
 							rdfs:domain	p4-lucat:Phenotype;
-							rdfs:range	rdfs:Literal;
-							rdfs:comment	"An attribute of phenotype represetning the type of the toxicity.";
-							dcterms:modified "2020-07-24"^^xsd:date;
+							rdfs:range	p4-lucat:ToxicityType;
+							rdfs:comment	"";
+							dcterms:modified "2021-10-12"^^xsd:date;
 							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
 
 
