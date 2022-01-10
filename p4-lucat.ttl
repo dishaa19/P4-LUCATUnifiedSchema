@@ -1193,22 +1193,15 @@ p4-lucat:hasPerformanceObservation	rdf:type        owl:ObjectProperty;
 						dcterms:modified "2019-01-30"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-# p4-lucat:gender	rdf:type	owl:ObjectProperty;
-# 				rdfs:label	"gender";
-# 				rdfs:domain	p4-lucat:LCPatient;
-# 				rdfs:range	p4-lucat:Gender;
-# 				rdfs:comment	"Gender value of the patient.";
-# 				dcterms:modified "2018-01-14"^^xsd:date;
-# 				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+p4-lucat:gender	rdf:type	owl:ObjectProperty;
+				rdfs:label	"gender";
+				rdfs:domain	p4-lucat:LCPatient;
+				rdfs:range	p4-lucat:Gender;
+				rdfs:comment	"Gender value of the patient.";
+				dcterms:modified "2018-01-14"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-p4-lucat:sexo  	rdf:type 	owl:DatatypeProperty;
-                                        rdfs:subPropertyOf owl:topDataProperty;
-                                        rdfs:domain p4-lucat:LCPatient_Patient;
-                                        rdfs:range p4-lucat:Gender;
-                                        rdfs:comment "This property shows the gender value of the patient."@en;
-                                        rdfs:isDefinedBy "emetis_niazmand"@en;
-                                        rdfs:label "sexo"@en;
-                                        owl:versionInfo "v1.0"@en.
+
 
 p4-lucat:tumorType	rdf:type	owl:ObjectProperty;
 				rdfs:label	"tumorType";
