@@ -1,8 +1,11 @@
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix p4-lucat: <http://p4-lucat.eu/vocab/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix prv: <http://purl.org/net/provenance/ns#> .
 @base <http://www.w3.org/2002/07/owl#> .
 
 [ rdf:type owl:Ontology
@@ -377,6 +380,14 @@ xsd:date rdf:type rdfs:Datatype .
                                                        rdfs:isDefinedBy "emetis_niazmand"@en ;
                                                        rdfs:label "hasCUIAnnotationCancerStage"@en .
 
+###  http://p4-lucat.eu/vocab/hasCUIAnnotationChemoTreatment
+<http://p4-lucat.eu/vocab/hasCUIAnnotationChemoTreatment> rdf:type owl:ObjectProperty ;
+                                                       rdfs:subPropertyOf owl:topObjectProperty ;
+                                                       rdfs:domain <http://p4-lucat.eu/vocab/Concept> ;
+                                                       rdfs:range <http://p4-lucat.eu/vocab/Annotation> ;
+                                                       rdfs:comment "CUI associated with the chemotherapy treatment"@en ;
+                                                       rdfs:isDefinedBy "emetis_niazmand"@en ;
+                                                       rdfs:label "hasCUIAnnotationChemoTreatment"@en .
 
 ###  http://p4-lucat.eu/vocab/hasCUIAnnotationHistology
 <http://p4-lucat.eu/vocab/hasCUIAnnotationHistology> rdf:type owl:ObjectProperty ;
@@ -538,7 +549,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://p4-lucat.eu/vocab/hasClassChemoTreatment
 <http://p4-lucat.eu/vocab/hasClassChemoTreatment> rdf:type owl:ObjectProperty ;
                                                   rdfs:subPropertyOf owl:topObjectProperty ;
-                                                  rdfs:domain <http://p4-lucat.eu/vocab/Patient> ;
+                                                  rdfs:domain <http://p4-lucat.eu/vocab/LCPatient_CT> ;
                                                   rdfs:range <http://p4-lucat.eu/vocab/Chemotherapy> ;
                                                   rdfs:comment "Class of the ct treatment"@en ;
                                                   rdfs:isDefinedBy "emetis_niazmand"@en ;
@@ -2784,12 +2795,20 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://p4-lucat.eu/vocab/hasChemoTreatmentPosition
 <http://p4-lucat.eu/vocab/hasChemoTreatmentPosition> rdf:type owl:DatatypeProperty ;
                                                      rdfs:subPropertyOf owl:topDataProperty ;
-                                                     rdfs:domain <http://p4-lucat.eu/vocab/Chemotherapy> ;
+                                                     rdfs:domain <http://p4-lucat.eu/vocab/LCPatient_CT> ;
                                                      rdfs:range rdfs:Literal ;
                                                      rdfs:comment "Chemotherapy position ID"@en ;
                                                      rdfs:isDefinedBy "disha_purohit"@en ;
                                                      rdfs:label "hasChemoTreatmentPosition"@en .
 
+###  http://p4-lucat.eu/vocab/hasOtherTherapy
+<http://p4-lucat.eu/vocab/hasOtherTherapy> rdf:type owl:DatatypeProperty ;
+                                                     rdfs:subPropertyOf owl:topDataProperty ;
+                                                     rdfs:domain <http://p4-lucat.eu/vocab/LCPatient_CT> ;
+                                                     rdfs:range rdfs:Literal ;
+                                                     rdfs:comment "Other therapy"@en ;
+                                                     rdfs:isDefinedBy "disha_purohit"@en ;
+                                                     rdfs:label "hasOtherTherapy"@en .
 
 ###  http://p4-lucat.eu/vocab/hasConditionAnn
 <http://p4-lucat.eu/vocab/hasConditionAnn> rdf:type owl:DatatypeProperty ;
@@ -2870,7 +2889,6 @@ xsd:date rdf:type rdfs:Datatype .
                                      rdfs:comment "Drug ID"@en ;
                                      rdfs:label "disha_purohit"@en ,
                                                 "hasDrugID"@en .
-
 
 ###  http://p4-lucat.eu/vocab/hasDurationInHospital
 <http://p4-lucat.eu/vocab/hasDurationInHospital> rdf:type owl:DatatypeProperty ;
@@ -3046,7 +3064,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://p4-lucat.eu/vocab/hasNmberCycleCTTreatment
 <http://p4-lucat.eu/vocab/hasNmberCycleCTTreatment> rdf:type owl:DatatypeProperty ;
                                                     rdfs:subPropertyOf owl:topDataProperty ;
-                                                    rdfs:domain <http://p4-lucat.eu/vocab/Chemotherapy> ;
+                                                    rdfs:domain <http://p4-lucat.eu/vocab/LCPatient_CT> ;
                                                     rdfs:range rdfs:Literal ;
                                                     rdfs:comment "Nmber of cycles of the CT treatment"@en ;
                                                     rdfs:isDefinedBy "disha_purohit"@en ;
@@ -3401,7 +3419,22 @@ xsd:date rdf:type rdfs:Datatype .
                                                         rdfs:isDefinedBy "emetis_niazmand"@en ;
                                                         rdfs:label "hasSurgeryProcedureLabel_SPA"@en .
 
-
+###  http://p4-lucat.eu/vocab/chemoTreatmentLabel_SPA
+<http://p4-lucat.eu/vocab/chemoTreatmentLabel_SPA> rdf:type owl:DatatypeProperty ;
+                                                        rdfs:subPropertyOf owl:topDataProperty ;
+                                                        rdfs:domain <http://p4-lucat.eu/vocab/LCPatient_CT> ;
+                                                        rdfs:range xsd:string ;
+                                                        rdfs:comment "Chemotherapy treatment in spanish"@en ;
+                                                        rdfs:isDefinedBy "emetis_niazmand"@en ;
+                                                        rdfs:label "chemoTreatmentLabel_SPA"@en .
+###  http://p4-lucat.eu/vocab/chemoTreatmentLabel_ENG
+<http://p4-lucat.eu/vocab/chemoTreatmentLabel_ENG> rdf:type owl:DatatypeProperty ;
+                                                        rdfs:subPropertyOf owl:topDataProperty ;
+                                                        rdfs:domain <http://p4-lucat.eu/vocab/LCPatient_CT> ;
+                                                        rdfs:range xsd:string ;
+                                                        rdfs:comment "Chemotherapy treatment in english"@en ;
+                                                        rdfs:isDefinedBy "emetis_niazmand"@en ;
+                                                        rdfs:label "chemoTreatmentLabel_ENG"@en .
 ###  http://p4-lucat.eu/vocab/hasTumorSize
 <http://p4-lucat.eu/vocab/hasTumorSize> rdf:type owl:DatatypeProperty ;
                                         rdfs:subPropertyOf owl:topDataProperty ;
