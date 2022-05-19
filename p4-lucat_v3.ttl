@@ -4230,13 +4230,14 @@ xsd:date rdf:type rdfs:Datatype .
 
 
 ###  http://p4-lucat.eu/vocab/semanticTypeGroup
-<http://p4-lucat.eu/vocab/semanticTypeGroup> rdf:type owl:DatatypeProperty ;
-                                             rdfs:domain <http://p4-lucat.eu/vocab/Annotation> ;
-                                             rdfs:range rdfs:Literal ;
-                                             <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
-                                             <http://purl.org/dc/terms/modified> "2020-10-05"@en ;
-                                             rdfs:comment "The semantic type group provided by UMLS."@en ;
-                                             rdfs:label "semanticTypeGroup"@en .
+<http://p4-lucat.eu/vocab/semanticTypeGroup> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://p4-lucat.eu/vocab/Annotation> ;
+                                           <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/emetis-niazmand/> ;
+                                           <http://purl.org/dc/terms/modified> "2022-05-19"@en ;
+                                           rdfs:comment "The semantic type group provided by UMLS."@en ;
+                                           rdfs:label "SemanticTypeGroup"@en .
+                                             
+                                       
 
 
 ###  http://p4-lucat.eu/vocab/semanticTypeID
