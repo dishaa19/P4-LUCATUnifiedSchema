@@ -4219,14 +4219,6 @@ xsd:date rdf:type rdfs:Datatype .
                                               rdfs:label "semanticGroupLabel" .
 
 
-###  http://p4-lucat.eu/vocab/semanticType
-<http://p4-lucat.eu/vocab/semanticType> rdf:type owl:DatatypeProperty ;
-                                        rdfs:domain <http://p4-lucat.eu/vocab/Annotation> ;
-                                        rdfs:range rdfs:Literal ;
-                                        <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
-                                        <http://purl.org/dc/terms/modified> "2018-11-27"@en ;
-                                        rdfs:comment "A list with the allowed semantic_types for this Annotation in the UMLS."@en ;
-                                        rdfs:label "semanticType"@en .
 
 
 ###  http://p4-lucat.eu/vocab/semanticTypeDefition
