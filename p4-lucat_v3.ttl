@@ -9,11 +9,13 @@
 @base <http://www.w3.org/2002/07/owl#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix up: <http://purl.uniprot.org/core/> .
 @prefix wikidata: <https://www.wikidata.org/wiki/> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix dbr: <http://dbpedia.org/resource/> .
 @prefix dbo: <http://dbpedia.org/ontology/> .
 @prefix dbp: <http://dbpedia.org/property/> .
+@prefix sio: <https://semanticscience.org/resource/> .
 
 <https://github.com/SDM-TIB/P4-LUCATUnifiedSchema/edit/master/p4-lucat_v3.ttl> rdf:type owl:Ontology.
 
@@ -5990,6 +5992,12 @@ xsd:date rdf:type rdfs:Datatype .
                                                           <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
                                                           rdfs:comment "."@en .
 
+<http://p4-lucat.eu/vocab/DigitalObjectIdentifier> rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://p4-lucat.eu/vocab/Concept> ;
+                                       <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/emetis-niazmand/> ;
+                                       <http://purl.org/dc/terms/modified> "2022-05-20"@en ;
+                                       rdfs:label "Digital Object Identifier"@en .
+
 <http://p4-lucat.eu/vocab/DDI-CRD> rdf:type owl:Class ;
                                        rdfs:subClassOf <http://p4-lucat.eu/vocab/DrugDrugInteraction> ;
                                        <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/emetis-niazmand/> ;
@@ -6004,7 +6012,6 @@ xsd:date rdf:type rdfs:Datatype .
 ### Equivalent Classes
 p4-lucat:Protein owl:equivalentClass up:Protein, dbr:Protein, wikidata:Q8054 .
 p4-lucat:Treatment owl:equivalentClass wikidata:Q179661, dbo:treatment, dbr:Therapy .
-p4-lucat:CovidTreatment owl:equivalentClass wikidata:Q96337364 .
 p4-lucat:Phenotype owl:equivalentClass obo:OGMS_0000023, sio:SIO_001280, dbr:Phenotype, wikidata:Q104053 .
 p4-lucat:Drug owl:equivalentClass dbo:Drug, wikidata:Q8386 .
 p4-lucat:Gene owl:equivalentClass dbo:Gene, dbr:Gene, wikidata:Q7187, up:Gene, sio:SIO_010035, obo:GO_0010467 .
