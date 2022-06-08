@@ -4970,7 +4970,8 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://p4-lucat.eu/vocab/Diagnosis_Markers
 <http://p4-lucat.eu/vocab/Diagnosis_Markers> rdf:type owl:Class ;
-                                             rdfs:subClassOf <http://p4-lucat.eu/vocab/Concept> ;
+                                             rdfs:subClassOf <http://p4-lucat.eu/vocab/Biomarker> ;
+                                             rdfs:isDefinedBy "emetis_niazmand"@en ;
                                              rdfs:label "Diagnosis_Markers" .
 
 
@@ -4982,7 +4983,8 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://p4-lucat.eu/vocab/Diagnosis_Symptom
 <http://p4-lucat.eu/vocab/Diagnosis_Symptom> rdf:type owl:Class ;
-                                             rdfs:subClassOf <http://p4-lucat.eu/vocab/Concept> ;
+                                             rdfs:subClassOf <http://p4-lucat.eu/vocab/Symptom> ;
+                                             rdfs:isDefinedBy "emetis_niazmand"@en ;
                                              rdfs:label "Diagnosis_Symptom" .
 
 
@@ -5359,7 +5361,9 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://p4-lucat.eu/vocab/Molecular_Markers
 <http://p4-lucat.eu/vocab/Molecular_Markers> rdf:type owl:Class ;
-                                             rdfs:subClassOf <http://p4-lucat.eu/vocab/Concept> .
+                                             rdfs:subClassOf <http://p4-lucat.eu/vocab/Biomarker> ;
+                                             rdfs:isDefinedBy "emetis_niazmand"@en ;
+                                             rdfs:label "Molecular_Markers"@en .
 
 
 ###  http://p4-lucat.eu/vocab/Mutation
@@ -5460,7 +5464,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://p4-lucat.eu/vocab/Patient_CT_Toxicity
 <http://p4-lucat.eu/vocab/Patient_CT_Toxicity> rdf:type owl:Class ;
-                                               rdfs:subClassOf <http://p4-lucat.eu/vocab/Concept> ;
+                                               rdfs:subClassOf <http://p4-lucat.eu/vocab/Treatment_Toxicity> ;
                                                rdfs:isDefinedBy "disha_purohit"@en ;
                                                rdfs:label "Patient_CT_Toxicity"@en .
 
@@ -5499,14 +5503,14 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://p4-lucat.eu/vocab/Patient_RT_Toxicity
 <http://p4-lucat.eu/vocab/Patient_RT_Toxicity> rdf:type owl:Class ;
-                                               rdfs:subClassOf <http://p4-lucat.eu/vocab/Concept> ;
+                                               rdfs:subClassOf <http://p4-lucat.eu/vocab/Treatment_Toxicity> ;
                                                rdfs:isDefinedBy "disha_purohit"@en ;
                                                rdfs:label "Patient_RT_Toxicity"@en .
 
 
 ###  http://p4-lucat.eu/vocab/Patient_Relapse
 <http://p4-lucat.eu/vocab/Patient_Relapse> rdf:type owl:Class ;
-                                           rdfs:subClassOf <http://p4-lucat.eu/vocab/Concept> ;
+                                           rdfs:subClassOf <http://p4-lucat.eu/vocab/Relapse> ;
                                            rdfs:label "Patient_Relapse" .
 
 
@@ -5564,10 +5568,6 @@ xsd:date rdf:type rdfs:Datatype .
                                                    rdfs:label "PredictedDrugSideEffect"@en .
 
 
-###  http://p4-lucat.eu/vocab/PreviousTreatment
-<http://p4-lucat.eu/vocab/PreviousTreatment> rdf:type owl:Class ;
-                                             rdfs:subClassOf <http://p4-lucat.eu/vocab/Concept> ;
-                                             rdfs:label "PreviousTreatment" .
 
 
 ###  http://p4-lucat.eu/vocab/Previous_Treatment
@@ -5840,12 +5840,6 @@ xsd:date rdf:type rdfs:Datatype .
                                                rdfs:label "p4-lucat:ToxicityObservation"@en .
 
 
-###  http://p4-lucat.eu/vocab/ToxicityType
-<http://p4-lucat.eu/vocab/ToxicityType> rdf:type owl:Class ;
-                                        rdfs:subClassOf <http://p4-lucat.eu/vocab/Concept> ;
-                                        rdfs:label "ToxicityType" .
-
-
 ###  http://p4-lucat.eu/vocab/Treatment
 <http://p4-lucat.eu/vocab/Treatment> rdf:type owl:Class ;
                                      rdfs:subClassOf <http://p4-lucat.eu/vocab/Concept> ;
@@ -5860,17 +5854,6 @@ xsd:date rdf:type rdfs:Datatype .
                                          rdfs:comment "Represents any type of treatment line observations."@en ;
                                          rdfs:label "TreatmentLine"@en .
 
-
-###  http://p4-lucat.eu/vocab/TreatmentResponse
-<http://p4-lucat.eu/vocab/TreatmentResponse> rdf:type owl:Class ;
-                                             rdfs:subClassOf <http://p4-lucat.eu/vocab/Concept> ;
-                                             rdfs:label "TreatmentResponse" .
-
-
-###  http://p4-lucat.eu/vocab/TreatmentToxicity
-<http://p4-lucat.eu/vocab/TreatmentToxicity> rdf:type owl:Class ;
-                                             rdfs:subClassOf <http://p4-lucat.eu/vocab/Concept> ;
-                                             rdfs:label "TreatmentToxicity" .
 
 
 ###  http://p4-lucat.eu/vocab/Treatment_Response
