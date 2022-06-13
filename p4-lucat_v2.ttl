@@ -5380,6 +5380,18 @@ xsd:date rdf:type rdfs:Datatype .
                                                        rdfs:comment "Represents non-oncological treatment line observations."@en ;
                                                        rdfs:label "NonOncologicalTreatmentLine"@en .
 
+###Non-OncologicalTreatment
+<http://p4-lucat.eu/vocab/NonOncologicalTreatment> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://p4-lucat.eu/vocab/Treatment> 
+                                                       rdfs:comment "Represents non-oncological treatment."@en ;
+                                                       rdfs:label "NonOncologicalTreatment"@en .
+
+###OncologicalTreatment
+<http://p4-lucat.eu/vocab/OncologicalTreatment> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://p4-lucat.eu/vocab/Treatment> 
+                                                       rdfs:comment "Represents oncological treatment."@en ;
+                                                       rdfs:label "OncologicalTreatment"@en .
+
 
 ###  http://p4-lucat.eu/vocab/Observation
 <http://p4-lucat.eu/vocab/Observation> rdf:type owl:Class ;
