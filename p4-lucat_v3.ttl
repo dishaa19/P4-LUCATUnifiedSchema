@@ -703,12 +703,6 @@ xsd:date rdf:type rdfs:Datatype .
                                         rdfs:label "hasDrug"@en .
 
 
-###  http://p4-lucat.eu/vocab/hasEgfr
-<http://p4-lucat.eu/vocab/hasEgfr> rdf:type owl:ObjectProperty ;
-                                   rdfs:subPropertyOf owl:topObjectProperty ;
-                                   rdfs:domain <http://p4-lucat.eu/vocab/Patient> ;
-                                   rdfs:range <http://p4-lucat.eu/vocab/Biomarker> ;
-                                   rdfs:label "hasEgfr" .
 
 
 ###  http://p4-lucat.eu/vocab/hasFamiliarRelationship
@@ -1189,12 +1183,6 @@ xsd:date rdf:type rdfs:Datatype .
                                               rdfs:subPropertyOf owl:topObjectProperty .
 
 
-###  http://p4-lucat.eu/vocab/hasRos1
-<http://p4-lucat.eu/vocab/hasRos1> rdf:type owl:ObjectProperty ;
-                                   rdfs:subPropertyOf owl:topObjectProperty ;
-                                   rdfs:domain <http://p4-lucat.eu/vocab/Patient> ;
-                                   rdfs:range <http://p4-lucat.eu/vocab/Biomarker> ;
-                                   rdfs:label "hasRos1" .
 
 
 ###  http://p4-lucat.eu/vocab/hasSmokingHabit
@@ -5534,9 +5522,15 @@ xsd:date rdf:type rdfs:Datatype .
                                           rdfs:label "Patient_Status" .
 
 
+###  http://p4-lucat.eu/vocab/Surgery
+<http://p4-lucat.eu/vocab/Surgery> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://p4-lucat.eu/vocab/Concept> ;
+                                           rdfs:isDefinedBy "disha_purohit"@en ;
+                                           rdfs:label "Surgery"@en .
+
 ###  http://p4-lucat.eu/vocab/Patient_Surgery
 <http://p4-lucat.eu/vocab/Patient_Surgery> rdf:type owl:Class ;
-                                           rdfs:subClassOf <http://p4-lucat.eu/vocab/Concept> ;
+                                           rdfs:subClassOf <http://p4-lucat.eu/vocab/Surgery> ;
                                            rdfs:isDefinedBy "disha_purohit"@en ;
                                            rdfs:label "Patient_Surgery"@en .
 
